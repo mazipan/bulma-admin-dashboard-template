@@ -1,5 +1,5 @@
 # bulma-admin-dashboard-template
-Free Admin Dashboard Template Build with Bulma.io
+:honeybee: Free Admin Dashboard Template Build with Bulma.io
 
 
 ### Contact Me
