@@ -45,11 +45,18 @@
           <a class="navbar-item is-tab is-hidden-tablet">Features</a>
           <a class="navbar-item is-tab is-hidden-tablet">Pricing</a>
           <a class="navbar-item is-tab is-hidden-tablet">About</a>
+          <a class="navbar-item nav-tag">              
+            <span class="icon is-small">
+              <i class="fa fa-envelope-o"></i>
+            </span>
+            <span class="tag is-primary tag-notif">6</span>
+          </a>  
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">              
-              <figure class="image is-32x32">
+              <figure class="image is-32x32" style="margin-right:.5em;">
                 <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32">
               </figure>
+              mazipan
             </a>
           
             <div class="navbar-dropdown is-right">              
@@ -81,16 +88,19 @@
             General
           </p>
           <ul class="menu-list">
-            <li><a class="is-active">Dashboard</a></li>
-            <li><a>Customers</a></li>
+            <li><a class="is-active"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard</a></li>
           </ul>
           <p class="menu-label">
             Administration
           </p>
           <ul class="menu-list">
-            <li><a>Team Settings</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-table"></i></span> Tables</a></li>            
+            <li><a><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
+
             <li>
-              <a class="">Manage Your Team</a>
+              <a class=""><i class="fa fa-cog"></i></span> Settings</a>
               <ul>
                 <li><a>Members</a></li>
                 <li><a>Plugins</a></li>
@@ -99,12 +109,12 @@
             </li>
           </ul>
           <p class="menu-label">
-            Transactions
+            Live On
           </p>
           <ul class="menu-list">
-            <li><a>Payments</a></li>
-            <li><a>Transfers</a></li>
-            <li><a>Balance</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-windows"></i></span> Extras</a></li>
+            <li><a><span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page</a></li>
           </ul>
         </nav>
       </aside>
@@ -134,13 +144,13 @@
                 <div class="level-item">
                   <div class="">
                     <div class="heading">Sales $</div>
-                    <div class="title is-5">250,000</div>
+                    <div class="title is-5">250K</div>
                   </div>
                 </div>
                 <div class="level-item">
                   <div class="">
                     <div class="heading">Overall $</div>
-                    <div class="title is-5">750,000</div>
+                    <div class="title is-5">750K</div>
                   </div>
                 </div>
                 <div class="level-item">
@@ -185,13 +195,13 @@
               <div class="level">
                 <div class="level-item">
                   <div class="">
-                    <div class="heading">Positive</div>
+                    <div class="heading">Pos</div>
                     <div class="title is-5">1560</div>
                   </div>
                 </div>
                 <div class="level-item">
                   <div class="">
-                    <div class="heading">Negative</div>
+                    <div class="heading">Neg</div>
                     <div class="title is-5">368</div>
                   </div>
                 </div>
@@ -212,13 +222,13 @@
                 <div class="level-item">
                   <div class="">
                     <div class="heading">Orders $</div>
-                    <div class="title is-5">425,000</div>
+                    <div class="title is-5">425K</div>
                   </div>
                 </div>
                 <div class="level-item">
                   <div class="">
                     <div class="heading">Returns $</div>
-                    <div class="title is-5">106,250</div>
+                    <div class="title is-5">106K</div>
                   </div>
                 </div>
                 <div class="level-item">
@@ -236,48 +246,40 @@
           <div class="column is-6">
             <div class="panel">
               <p class="panel-heading">
-                Expenses: Daily - $700
+                Chart - Bar Style (Chart.js)
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                <canvas id="chartBar" width="400" height="400"></canvas>
               </div>
             </div>
           </div>
           <div class="column is-6">
             <div class="panel">
               <p class="panel-heading">
-                Refunds: Daily - $200
+                Chart - Line Style (Chart.js)
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                <canvas id="chartLine" width="400" height="400"></canvas>
               </div>
             </div>
           </div>
           <div class="column is-6">
             <div class="panel">
               <p class="panel-heading">
-                Something
+                Chart - Doughnut Style (Chart.js)
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                <canvas id="chartDoughnut" width="400" height="400"></canvas>
               </div>
             </div>
           </div>
           <div class="column is-6">
             <div class="panel">
               <p class="panel-heading">
-                Something Else
+                Chart - Scatter Style (Chart.js)
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                <canvas id="chartScatter" width="400" height="400"></canvas>
               </div>
             </div>
           </div>
