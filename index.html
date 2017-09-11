@@ -20,33 +20,54 @@
 
   <header class="hero is-light">
     <div class="hero-head">
-      <nav class="nav has-shadow">
-        <div class="nav-left">
-          <a class="nav-item">
+      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+          <a class="navbar-item">
             <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
           </a>
-          <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
-          <a class="nav-item is-tab is-hidden-mobile">Features</a>
-          <a class="nav-item is-tab is-hidden-mobile">Pricing</a>
-          <a class="nav-item is-tab is-hidden-mobile">About</a>
+          <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Home</a>
+          <a class="navbar-item is-tab is-hidden-mobile">Features</a>
+          <a class="navbar-item is-tab is-hidden-mobile">Pricing</a>
+          <a class="navbar-item is-tab is-hidden-mobile">About</a>
+          
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
         </div>
-        <span class="nav-toggle">
-          <span></span>
-        <span></span>
-        <span></span>
-        </span>
-        <div class="nav-right nav-menu">
-          <a class="nav-item is-tab is-hidden-tablet is-active">Home</a>
-          <a class="nav-item is-tab is-hidden-tablet">Features</a>
-          <a class="nav-item is-tab is-hidden-tablet">Pricing</a>
-          <a class="nav-item is-tab is-hidden-tablet">About</a>
-          <a class="nav-item is-tab">
-            <figure class="image is-16x16" style="margin-right: 8px;">
-              <img src="http://bulma.io/images/jgthms.png">
-            </figure>
-            Profile
-          </a>
-          <a class="nav-item is-tab">Log out</a>
+
+
+        <div class="navbar-menu navbar-end" id="navMenu">
+          <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+          <a class="navbar-item is-tab is-hidden-tablet">Features</a>
+          <a class="navbar-item is-tab is-hidden-tablet">Pricing</a>
+          <a class="navbar-item is-tab is-hidden-tablet">About</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">              
+              <figure class="image is-32x32">
+                <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32">
+              </figure>
+            </a>
+          
+            <div class="navbar-dropdown is-right">              
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-user-o"></i>
+                  </span>
+                  Profile
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-power-off"></i>
+                  </span>
+                  Logout
+                </a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
@@ -76,9 +97,6 @@
                 <li><a>Add a member</a></li>
               </ul>
             </li>
-            <li><a>Invitations</a></li>
-            <li><a>Cloud Storage Environment Settings</a></li>
-            <li><a>Authentication</a></li>
           </ul>
           <p class="menu-label">
             Transactions
@@ -109,7 +127,7 @@
 
         <div class="columns is-multiline">
           <div class="column">
-            <div class="box">
+            <div class="box notification is-primary">
               <div class="heading">Top Seller Total</div>
               <div class="title">56,950</div>
               <div class="level">
@@ -135,7 +153,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="box">
+            <div class="box notification is-warning">
               <div class="heading">Revenue / Expenses</div>
               <div class="title">55% / 45%</div>
               <div class="level">
@@ -161,7 +179,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="box">
+            <div class="box notification is-info">
               <div class="heading">Feedback Activity</div>
               <div class="title">78% &uarr;</div>
               <div class="level">
@@ -187,7 +205,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="box">
+            <div class="box notification is-danger">
               <div class="heading">Orders / Returns</div>
               <div class="title">75% / 25%</div>
               <div class="level">
