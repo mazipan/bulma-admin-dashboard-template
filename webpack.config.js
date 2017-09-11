@@ -11,7 +11,7 @@ module.exports = {
   entry: './main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: '/bulma-admin-dashboard-template',
     filename: 'build.js'
   },
   module: {
@@ -46,7 +46,13 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    noInfo: true,
+    quiet: true,
+    compress: true,
+    port: 4000,
+    publicPath: "/bulma-admin-dashboard-template/dist/",
+    open: true,
+    openPage: 'bulma-admin-dashboard-template'
   },
   performance: {
     hints: false
