@@ -1,6 +1,8 @@
 # bulma-admin-dashboard-template
 :honeybee: Free Admin Dashboard Template Build with Bulma.io
 
+## Demo
+[https://mazipan.github.io/bulma-admin-dashboard-template/](https://mazipan.github.io/bulma-admin-dashboard-template/)
 
 ### Contact Me
 
