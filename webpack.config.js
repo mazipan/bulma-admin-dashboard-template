@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const CompressionPlugin = require("compression-webpack-plugin")
 
 const extractSass = new ExtractTextPlugin({
   filename: "[name].[contenthash].css",
@@ -76,6 +77,9 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
+    }),
+    new CompressionPlugin({
+      algorithm: 'gzip'
     }),
     extractSass
   ])
