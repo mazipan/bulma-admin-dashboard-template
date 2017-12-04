@@ -50,10 +50,23 @@ module.exports = {
     noInfo: true,
     quiet: true,
     compress: true,
-    port: 4000,
-    publicPath: "/bulma-admin-dashboard-template/dist/",
     open: true,
-    openPage: 'bulma-admin-dashboard-template'
+    port: 4000,
+    contentBase: path.join(__dirname, ""),
+    index: 'index.html',
+    publicPath: "/bulma-admin-dashboard-template/dist/",
+    openPage: 'bulma-admin-dashboard-template',
+    proxy: {
+      "/forms": {
+        target: "http://localhost:4000",
+        bypass: function(req, res, proxyOptions) {
+          if (req.headers.accept.indexOf("html") !== -1) {
+            let view = req.url.replace('/bulma-admin-dashboard-template', '')
+            return view;
+          }
+        }
+      }
+    }
   },
   performance: {
     hints: false
