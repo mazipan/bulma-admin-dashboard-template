@@ -13,7 +13,7 @@
 + Run development mode : `npm run dev`
 + Open browser in : `localhost:4000/bulma-admin-dashboard-template/`
 + Before commit you can run : `npm run dist`
-+ Dont forget to upgrade version in `package.json`, if you working to fixing bug then upgrade minor version 1.1.0 -> 1.1.1, if you are working in feature then upgrade major version 1.1.0 -> 1.2.0
++ Dont forget to upgrade version in `package.json`, if you working to fixing bug then upgrade minor version **1.1.0** -> **1.1.1**, if you are working in feature then upgrade major version **1.1.0** -> **1.2.0**
 + Your pull request are very welcome :pray:
 
 ## Contributing
