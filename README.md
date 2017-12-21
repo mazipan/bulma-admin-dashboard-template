@@ -5,7 +5,7 @@
 [https://mazipan.github.io/bulma-admin-dashboard-template/](https://mazipan.github.io/bulma-admin-dashboard-template/)
 
 ## Screenshoot
-![https://raw.githubusercontent.com/mazipan/bulma-admin-dashboard-template/master/screenshoot.jpg](https://raw.githubusercontent.com/mazipan/bulma-admin-dashboard-template/master/screenshoot.jpg)
+![Screenshoot](https://raw.githubusercontent.com/mazipan/bulma-admin-dashboard-template/master/screenshoot.png)
 
 ## Development
 + Install latest LTS version Nodejs in https://nodejs.org/en/download/
