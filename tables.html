@@ -33,7 +33,7 @@
         <div class="navbar-brand">
 
           <a class="navbar-item">
-            <img src="/bulma-admin-dashboard-template/logo.png" alt="Bulma Admin Template logo">
+            <img class="navbar-brand" src="/bulma-admin-dashboard-template/logo.png" alt="Bulma Admin Template logo">
           </a>
           <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Home</a>
           <a class="navbar-item is-tab is-hidden-mobile">Features</a>
@@ -89,9 +89,9 @@
     </div>
   </header>
 
-  <div class="section">
+  <div class="wrapper">
     <div class="columns">
-      <aside class="column is-2">
+      <aside class="column is-2 aside">
         <nav class="menu">
           <p class="menu-label">
             General
@@ -128,7 +128,14 @@
         </nav>
       </aside>
 
-      <main class="column">
+      <main class="column main">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Tables</a></li>
+          </ul>
+        </nav>
+
         <div class="level">
           <div class="level-left">
             <div class="level-item">

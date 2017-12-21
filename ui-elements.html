@@ -33,13 +33,13 @@
         <div class="navbar-brand">
 
           <a class="navbar-item">
-            <img src="/bulma-admin-dashboard-template/logo.png" alt="Bulma Admin Template logo">
+            <img class="navbar-brand" src="/bulma-admin-dashboard-template/logo.png" alt="Bulma Admin Template logo">
           </a>
           <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Home</a>
           <a class="navbar-item is-tab is-hidden-mobile">Features</a>
           <a class="navbar-item is-tab is-hidden-mobile">Pricing</a>
           <a class="navbar-item is-tab is-hidden-mobile">About</a>
-
+          
           <button class="button navbar-burger" data-target="navMenu">
             <span></span>
             <span></span>
@@ -59,24 +59,24 @@
               <i class="fa fa-envelope-o"></i>
             </span>
             <span class="tag is-primary tag-notif">6</span>
-          </a>
+          </a>  
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <a class="navbar-link">              
               <figure class="image is-32x32" style="margin-right:.5em;">
                 <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32">
               </figure>
               mazipan
             </a>
-
-            <div class="navbar-dropdown is-right">
-              <a class="navbar-item">
+          
+            <div class="navbar-dropdown is-right">              
+                <a class="navbar-item">
                   <span class="icon is-small">
                     <i class="fa fa-user-o"></i>
                   </span>
                   Profile
                 </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
+                <hr class="navbar-divider">
+                <a class="navbar-item">
                   <span class="icon is-small">
                     <i class="fa fa-power-off"></i>
                   </span>
@@ -89,9 +89,9 @@
     </div>
   </header>
 
-  <div class="section">
+  <div class="wrapper">
     <div class="columns">
-      <aside class="column is-2">
+      <aside class="column is-2 aside">
         <nav class="menu">
           <p class="menu-label">
             General
@@ -128,7 +128,14 @@
         </nav>
       </aside>
 
-      <main class="column">
+      <main class="column main">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">UI Elements</a></li>
+          </ul>
+        </nav>
+
         <div class="level">
           <div class="level-left">
             <div class="level-item">
@@ -145,7 +152,7 @@
         </div>
 
         <div class="columns is-multiline">
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Button</h3>
             <div>
             <a class="button">Anchor</a>
@@ -155,7 +162,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <div>
             <a class="button is-white">White</a>
             <a class="button is-light">Light</a>
@@ -166,7 +173,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <div>
             <a class="button is-primary">Primary</a>
             <a class="button is-info">Info</a>
@@ -176,7 +183,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <div>
             <a class="button is-small">Small</a>
             <a class="button">Normal</a>
@@ -185,7 +192,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <div>
             <a class="button is-outlined">Outlined</a>
             <a class="button is-primary is-outlined">Outlined</a>
@@ -195,7 +202,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Tag</h3>
             <div>
             <span class="tag is-black">Black</span>
@@ -210,7 +217,7 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Icon</h3>
             <div>
             <span class="icon has-text-info">
@@ -228,14 +235,14 @@
             </div>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Image</h3>
             <figure class="image is-128x128">
               <img src="http://bulma.io/images/placeholders/256x256.png">
             </figure>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Progress</h3>
             <progress class="progress is-primary" value="30" max="100">30%</progress>
             <progress class="progress is-info" value="45" max="100">45%</progress>
@@ -244,7 +251,7 @@
             <progress class="progress is-danger" value="90" max="100">90%</progress>
           </div>
 
-          <div class="conteiner is-clearfix">
+          <div class="container block is-clearfix">
             <h3>Notification</h3>
             <div class="notification is-primary">
               <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum

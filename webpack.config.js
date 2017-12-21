@@ -55,15 +55,13 @@ module.exports = {
     contentBase: path.join(__dirname, ""),
     index: 'index.html',
     publicPath: "/bulma-admin-dashboard-template/dist/",
-    openPage: 'bulma-admin-dashboard-template',
+    openPage: 'bulma-admin-dashboard-template/index.html',
     proxy: {
-      "/forms": {
+      "/bulma-admin-dashboard-template": {
         target: "http://localhost:4000",
         bypass: function(req, res, proxyOptions) {
-          if (req.headers.accept.indexOf("html") !== -1) {
-            let view = req.url.replace('/bulma-admin-dashboard-template', '')
-            return view;
-          }
+          let view = req.url.replace('/bulma-admin-dashboard-template', '')
+          return view;
         }
       }
     }
@@ -91,9 +89,9 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
+    extractSass,
     new CompressionPlugin({
       algorithm: 'gzip'
-    }),
-    extractSass
+    })
   ])
 }

@@ -11,14 +11,78 @@
     margin-left: -2px;
   }
 }
-.navbar-burger{
-  border: 0;
-}
-.navbar-link{
-  figure{
-    img{
-      border-radius: 50%;
-      max-height: 2em;
+
+.navbar{
+  background: #2E363F;
+
+  &-item{
+    background-color: #2E363F;
+    color: #afb8c3 !important;
+    &.is-active{
+      background-color: #f5f5f5 !important;
+      color: #363636 !important;
+    }
+    &:hover {
+      background-color: #f5f5f5 !important;
+      color: #363636 !important;
     }
   }
+
+  &-brand{
+    background-color: #fff;
+    border-radius: .25em;
+  }
+
+  &-dropdown{
+    .navbar-item{
+      background-color: #fff;
+    }
+  }
+
+  &-burger{
+    border: 0;
+  }
+
+  &-link{
+    figure{
+      img{
+        border-radius: 50%;
+        max-height: 2em;
+      }
+    }
+  }
+}
+
+.breadcrumb:not(:last-child){
+  margin-bottom: 0;
+}
+
+// navigation left area
+.aside{
+  background: #2E363F;    
+  padding: 2em .2em 0 1em;
+
+  a{
+    color: #afb8c3;
+  }
+
+  .menu-list {
+    li {
+      margin-top: .5em;
+    }
+  }
+}
+
+// main area
+.main{
+  padding: 2em 1em 0 1em;
+}
+
+.menu-label{
+  color: #00d1b2;
+  margin-left: .5em;
+}
+
+.block{
+  margin-top: .5em;
 }
