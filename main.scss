@@ -14,7 +14,7 @@
 
 .navbar{
   background: #2E363F;
-
+  
   &-item{
     background-color: #2E363F;
     color: #afb8c3 !important;
@@ -28,9 +28,17 @@
     }
   }
 
-  &-brand{
+  .is--brand{
+    &:hover {
+      background-color: #2E363F !important;
+    }
+  }
+
+  &-brand-logo{
+    max-height: 3rem !important;
     background-color: #fff;
     border-radius: .25em;
+    padding: .25em;
   }
 
   &-dropdown{
@@ -40,7 +48,11 @@
   }
 
   &-burger{
+    background-color: #2E363F !important;
     border: 0;
+    span{
+      background-color: #00d1b2;
+    }
   }
 
   &-link{
