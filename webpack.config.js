@@ -4,7 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
 
 const extractSass = new ExtractTextPlugin({
-  filename: "[name].[contenthash].css",
+  filename: "main.css",
   disable: process.env.NODE_ENV === "development"
 })
 
@@ -24,13 +24,10 @@ module.exports = {
       },
       {
         test: /\.(scss|sass)$/,
-        use: [{
-          loader: "style-loader" // creates style nodes from JS strings
-        }, {
-          loader: "css-loader" // translates CSS into CommonJS
-        }, {
-          loader: "sass-loader" // compiles Sass to CSS
-        }]
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: ['css-loader', 'sass-loader']
+        })
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
