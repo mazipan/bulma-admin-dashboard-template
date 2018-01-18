@@ -1,6 +1,6 @@
 # :honeybee: Bulma Admin Dashboard Template
 
-> :honeybee: Free admin dashboard template with bulma css
+> Free admin dashboard template with bulma css
 
 ## Demo
 
