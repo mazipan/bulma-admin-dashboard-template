@@ -1,13 +1,17 @@
-# bulma-admin-dashboard-template
-:honeybee: Free Admin Dashboard Template Built with Bulma.io
+# :honeybee: Bulma Admin Dashboard Template
+
+> Free admin dashboard template with bulma css
 
 ## Demo
+
 [https://mazipan.github.io/bulma-admin-dashboard-template/](https://mazipan.github.io/bulma-admin-dashboard-template/)
 
 ## Screenshoot
+
 ![Screenshoot](https://raw.githubusercontent.com/mazipan/bulma-admin-dashboard-template/master/screenshoot.png)
 
 ## Development
+
 + Install latest LTS version Nodejs in https://nodejs.org/en/download/
 + Install all dependencies with : `npm install`
 + Run development mode : `npm run dev`
