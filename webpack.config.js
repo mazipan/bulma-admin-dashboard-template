@@ -23,9 +23,9 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(scss|sass)$/,
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
       },
@@ -66,7 +66,10 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    extractSass
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -86,7 +89,6 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
-    extractSass,
     new CompressionPlugin({
       algorithm: 'gzip'
     })
