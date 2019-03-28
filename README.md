@@ -2,13 +2,15 @@
 
 > Free admin dashboard template with bulma css
 
+[![Travis](https://img.shields.io/travis/mazipan/bulma-admin-dashboard-template.svg)](https://travis-ci.org/mazipan/bulma-admin-dashboard-template) [![Greenkeeper badge](https://badges.greenkeeper.io/mazipan/bulma-admin-dashboard-template.svg)](https://greenkeeper.io/)
+
 ## Demo
 
 [https://mazipan.github.io/bulma-admin-dashboard-template/](https://mazipan.github.io/bulma-admin-dashboard-template/)
 
 ## Screenshoot
 
-![Screenshoot](https://raw.githubusercontent.com/mazipan/bulma-admin-dashboard-template/master/screenshoot.png)
+![Screenshoot](screenshoot.png)
 
 ## Development
 

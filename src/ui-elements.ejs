@@ -11,10 +11,10 @@
   <meta name="author" content="Irfan Maulana" />
   <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="/bulma-admin-dashboard-template/dist/main.css">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
@@ -23,17 +23,17 @@
   <!-- GOOGLE ANALYTICS AND FRIENDS -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5442972248172818",
-    enable_page_level_ads: true
-  });
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5442972248172818",
+      enable_page_level_ads: true
+    });
   </script>
 
 </head>
 
 <body>
 
-  <header class="hero is-light">
+  <header class="hero">
     <div class="hero-head">
       <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -79,14 +79,14 @@
                   <span class="icon is-small">
                     <i class="fa fa-user-o"></i>
                   </span>
-                  Profile
+                  &nbsp; Profile
                 </a>
                 <hr class="navbar-divider">
                 <a class="navbar-item">
                   <span class="icon is-small">
                     <i class="fa fa-power-off"></i>
                   </span>
-                  Logout
+                  &nbsp; Logout
                 </a>
             </div>
           </div>
@@ -103,19 +103,19 @@
             General
           </p>
           <ul class="menu-list">
-            <li><a class="is-active" href="#"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard</a></li>
+            <li><a href="/bulma-admin-dashboard-template/"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard</a></li>
           </ul>
           <p class="menu-label">
             Administration
           </p>
           <ul class="menu-list">
             <li><a href="/bulma-admin-dashboard-template/forms.html"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms</a></li>
-            <li><a href="/bulma-admin-dashboard-template/ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li>
+            <li><a class="is-active" href="#"><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li>
             <li><a href="/bulma-admin-dashboard-template/tables.html"><span class="icon is-small"><i class="fa fa-table"></i></span> Tables</a></li>
             <li><a href="/bulma-admin-dashboard-template/presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
 
             <li>
-              <a class=""><i class="fa fa-cog"></i> Settings</a>
+              <a class=""><i class="fa fa-cog"></i></span> Settings</a>
               <ul>
                 <li><a>Members</a></li>
                 <li><a>Plugins</a></li>
@@ -138,14 +138,14 @@
         <nav class="breadcrumb is-small" aria-label="breadcrumbs">
           <ul>
             <li><a href="#">Home</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
+            <li class="is-active"><a href="#" aria-current="page">UI Elements</a></li>
           </ul>
         </nav>
 
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-              <div class="title has-text-primary"><i class="fa fa-tachometer"></i> Dashboard</div>
+              <div class="title">UI Elements (<a href="http://bulma.io/documentation/elements/box/">read more</a>)</div>
             </div>
           </div>
           <div class="level-right">
@@ -158,165 +158,155 @@
         </div>
 
         <div class="columns is-multiline">
-          <div class="column">
-            <div class="box notification is-primary">
-              <div class="heading">Top Seller Total</div>
-              <div class="title">56,950</div>
-              <div class="level">
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Sales $</div>
-                    <div class="title is-5">250K</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Overall $</div>
-                    <div class="title is-5">750K</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Sales %</div>
-                    <div class="title is-5">25%</div>
-                  </div>
-                </div>
-              </div>
+          <div class="container block is-clearfix">
+            <h3>Button</h3>
+            <div>
+            <a class="button">Anchor</a>
+            <button class="button">Button</button>
+            <input class="button" type="submit" value="Submit input">
+            <input class="button" type="reset" value="Reset input">
             </div>
           </div>
-          <div class="column">
-            <div class="box notification is-warning">
-              <div class="heading">Revenue / Expenses</div>
-              <div class="title">55% / 45%</div>
-              <div class="level">
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Rev Prod $</div>
-                    <div class="title is-5">30%</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Rev Serv $</div>
-                    <div class="title is-5">25%</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Exp %</div>
-                    <div class="title is-5">45%</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box notification is-info">
-              <div class="heading">Feedback Activity</div>
-              <div class="title">78% &uarr;</div>
-              <div class="level">
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Pos</div>
-                    <div class="title is-5">1560</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Neg</div>
-                    <div class="title is-5">368</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Pos/Neg %</div>
-                    <div class="title is-5">77% / 23%</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box notification is-danger">
-              <div class="heading">Orders / Returns</div>
-              <div class="title">75% / 25%</div>
-              <div class="level">
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Orders $</div>
-                    <div class="title is-5">425K</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Returns $</div>
-                    <div class="title is-5">106K</div>
-                  </div>
-                </div>
-                <div class="level-item">
-                  <div class="">
-                    <div class="heading">Success %</div>
-                    <div class="title is-5">+ 28,5%</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="columns is-multiline">
-          <div class="column is-6">
-            <div class="panel">
-              <p class="panel-heading">
-                Chart - Doughnut Style (Chart.js)
-              </p>
-              <div class="panel-block">
-                <canvas id="chartDoughnut" width="400" height="400"></canvas>
-              </div>
+          <div class="container block is-clearfix">
+            <div>
+            <a class="button is-white">White</a>
+            <a class="button is-light">Light</a>
+            <a class="button is-dark">Dark</a>
+            <a class="button is-black">Black</a>
+            <a class="button is-link">Link</a>
+
             </div>
           </div>
-          <div class="column is-6">
-            <div class="panel">
-              <p class="panel-heading">
-                Chart - Bar Style (Chart.js)
-              </p>
-              <div class="panel-block">
-                <canvas id="chartBar" width="400" height="400"></canvas>
-              </div>
+
+          <div class="container block is-clearfix">
+            <div>
+            <a class="button is-primary">Primary</a>
+            <a class="button is-info">Info</a>
+            <a class="button is-success">Success</a>
+            <a class="button is-warning">Warning</a>
+            <a class="button is-danger">Danger</a>
             </div>
           </div>
-          <div class="column is-6">
-            <div class="panel">
-              <p class="panel-heading">
-                Chart - Line Style (Chart.js)
-              </p>
-              <div class="panel-block">
-                <canvas id="chartLine" width="400" height="400"></canvas>
-              </div>
+
+          <div class="container block is-clearfix">
+            <div>
+            <a class="button is-small">Small</a>
+            <a class="button">Normal</a>
+            <a class="button is-medium">Medium</a>
+            <a class="button is-large">Large</a>
             </div>
           </div>
-          <div class="column is-6">
-            <div class="panel">
-              <p class="panel-heading">
-                Chart - Scatter Style (Chart.js)
-              </p>
-              <div class="panel-block">
-                <canvas id="chartScatter" width="400" height="400"></canvas>
-              </div>
+
+          <div class="container block is-clearfix">
+            <div>
+            <a class="button is-outlined">Outlined</a>
+            <a class="button is-primary is-outlined">Outlined</a>
+            <a class="button is-info is-outlined">Outlined</a>
+            <a class="button is-success is-outlined">Outlined</a>
+            <a class="button is-danger is-outlined">Outlined</a>
             </div>
           </div>
+
+          <div class="container block is-clearfix">
+            <h3>Tag</h3>
+            <div>
+            <span class="tag is-black">Black</span>
+            <span class="tag is-dark">Dark</span>
+            <span class="tag is-light">Light</span>
+            <span class="tag is-white">White</span>
+            <span class="tag is-primary">Primary</span>
+            <span class="tag is-info">Info</span>
+            <span class="tag is-success">Success</span>
+            <span class="tag is-warning">Warning</span>
+            <span class="tag is-danger">Danger</span>
+            </div>
+          </div>
+
+          <div class="container block is-clearfix">
+            <h3>Icon</h3>
+            <div>
+            <span class="icon has-text-info">
+                  <i class="fa fa-info-circle"></i>
+                </span>
+            <span class="icon has-text-success">
+                  <i class="fa fa-check-square"></i>
+                </span>
+            <span class="icon has-text-warning">
+                  <i class="fa fa-warning"></i>
+                </span>
+            <span class="icon has-text-danger">
+                  <i class="fa fa-ban"></i>
+                </span>
+            </div>
+          </div>
+
+          <div class="container block is-clearfix">
+            <h3>Image</h3>
+            <figure class="image is-128x128">
+              <img src="http://bulma.io/images/placeholders/256x256.png">
+            </figure>
+          </div>
+
+          <div class="container block is-clearfix">
+            <h3>Progress</h3>
+            <progress class="progress is-primary" value="30" max="100">30%</progress>
+            <progress class="progress is-info" value="45" max="100">45%</progress>
+            <progress class="progress is-success" value="60" max="100">60%</progress>
+            <progress class="progress is-warning" value="75" max="100">75%</progress>
+            <progress class="progress is-danger" value="90" max="100">90%</progress>
+          </div>
+
+          <div class="container block is-clearfix">
+            <h3>Notification</h3>
+            <div class="notification is-primary">
+              <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
+              ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+              consectetur adipiscing elit
+            </div>
+
+            <div class="notification is-info">
+              <button class="delete"></button> Info lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+              <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex
+              sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet, consectetur
+              adipiscing elit
+            </div>
+
+            <div class="notification is-success">
+              <button class="delete"></button> Success lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
+              ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+              consectetur adipiscing elit
+            </div>
+
+            <div class="notification is-warning">
+              <button class="delete"></button> Warning lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
+              ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+              consectetur adipiscing elit
+            </div>
+
+            <div class="notification is-danger">
+              <button class="delete"></button> Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
+              ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+              consectetur adipiscing elit
+            </div>
+          </div>
+
         </div>
       </main>
     </div>
   </div>
 
-  <script src="/bulma-admin-dashboard-template/dist/build.js"></script>
+
 
   <!-- GOOGLE ANALYTICS AND FRIENDS -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5442972248172818" data-ad-slot="1487770485" data-ad-format="auto"></ins>
   <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
   <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.mazipan.github.io/","name":"Irfan Maulana | Front End Developer","author":"Irfan Maulana","image":"http://mazipan.github.io/images/irfan-maulana.jpg","description":"Irfan Maulana is Front End Developer from Indonesia - Man that craft some code to build a beauty and readable code, experienced in web and desktop technology.","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script> <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","email":"mailto:mazipanneh@gmail.com","image":"http://mazipan.github.io/images/irfan-maulana.jpg","jobTitle":"Software Engineer","name":"Irfan Maulana","url":"https://www.mazipan.github.io/","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script>
   <script type="application/ld+json">

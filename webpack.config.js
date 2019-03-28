@@ -1,33 +1,73 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const CompressionPlugin = require("compression-webpack-plugin")
 
-const extractSass = new ExtractTextPlugin({
-  filename: "main.css",
-  disable: process.env.NODE_ENV === "development"
-})
+const SRC = path.resolve(__dirname, 'src');
+const NODE_ENV = process.env.NODE_ENV;
+
+const isDev = () => {
+  return (NODE_ENV === 'development');
+};
+
+const setPublicPath = () => {
+  return isDev() ? '/' : '/bulma-admin-dashboard-template/';
+};
+
+const setPath = function(folderName) {
+  return path.join(__dirname, folderName);
+};
+
+function extractHTML (templateFileName) {
+  return new HtmlWebpackPlugin({
+    filename: `${templateFileName}.html`,
+    inject: true,
+    template: setPath(`/src/${templateFileName}.ejs`),
+    minify: {
+      removeAttributeQuotes: true,
+      collapseWhitespace: true,
+      html5: true,
+      minifyCSS: true,
+      removeComments: true,
+      removeEmptyAttributes: true
+    },
+    environment: process.env.NODE_ENV
+  });
+}
 
 module.exports = {
-  entry: './main.js',
+  entry: {
+    app: './src/main.js'
+  },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/bulma-admin-dashboard-template',
-    filename: 'build.js'
+    path: isDev() ? path.resolve(__dirname) : setPath('dist'),
+    publicPath: setPublicPath(),
+    filename: isDev() ? '[name].js' : '[name].[hash].js'
+  },
+  mode: isDev() ? 'development' : 'production',
+  optimization:{
+    runtimeChunk: false,
+    splitChunks: {
+      chunks: "all",
+    }
+  },
+  resolve: {
+    extensions: ['.js', '.json'],
+    alias: {
+      '@': SRC
+    }
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        })
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -35,62 +75,46 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   },
-  resolve: {
-    alias: {
-    }
-  },
   devServer: {
     historyApiFallback: true,
-    noInfo: true,
-    quiet: true,
-    compress: true,
-    open: true,
-    port: 4000,
-    contentBase: path.join(__dirname, ""),
-    index: 'index.html',
-    publicPath: "/bulma-admin-dashboard-template/dist/",
-    openPage: 'bulma-admin-dashboard-template/index.html',
-    proxy: {
-      "/bulma-admin-dashboard-template": {
-        target: "http://localhost:4000",
-        bypass: function(req, res, proxyOptions) {
-          let view = req.url.replace('/bulma-admin-dashboard-template', '')
-          return view;
-        }
-      }
-    }
+    noInfo: false
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map',
   plugins: [
-    extractSass
-  ]
-}
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
+        isStaging: (isDev() || NODE_ENV === 'staging'),
+        NODE_ENV: '"'+NODE_ENV+'"'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
+    extractHTML('index'),
+    extractHTML('forms'),
+    extractHTML('presentations'),
+    extractHTML('tables'),
+    extractHTML('ui-elements'),
+    new MiniCssExtractPlugin({
+      filename: "[name].[hash].css"
     }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    }),
+    new CopyPlugin([
+      { from: 'src/logo.png', to: '.' }
+    ]),
     new CompressionPlugin({
       algorithm: 'gzip'
     })
-  ])
+  ]
 }

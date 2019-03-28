@@ -11,10 +11,10 @@
   <meta name="author" content="Irfan Maulana" />
   <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="/bulma-admin-dashboard-template/dist/main.css">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
@@ -23,17 +23,17 @@
   <!-- GOOGLE ANALYTICS AND FRIENDS -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-5442972248172818",
-      enable_page_level_ads: true
-    });
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5442972248172818",
+    enable_page_level_ads: true
+  });
   </script>
 
 </head>
 
 <body>
 
-  <header class="hero is-light">
+  <header class="hero">
     <div class="hero-head">
       <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -45,7 +45,7 @@
           <a class="navbar-item is-tab is-hidden-mobile">Features</a>
           <a class="navbar-item is-tab is-hidden-mobile">Pricing</a>
           <a class="navbar-item is-tab is-hidden-mobile">About</a>
-          
+
           <button class="button navbar-burger" data-target="navMenu">
             <span></span>
             <span></span>
@@ -60,33 +60,33 @@
           <a class="navbar-item is-tab is-hidden-tablet">Features</a>
           <a class="navbar-item is-tab is-hidden-tablet">Pricing</a>
           <a class="navbar-item is-tab is-hidden-tablet">About</a>
-          <a class="navbar-item nav-tag">              
+          <a class="navbar-item nav-tag">
             <span class="icon is-small">
               <i class="fa fa-envelope-o"></i>
             </span>
             <span class="tag is-primary tag-notif">6</span>
-          </a>  
+          </a>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">              
+            <a class="navbar-link">
               <figure class="image is-32x32" style="margin-right:.5em;">
                 <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32">
               </figure>
               mazipan
             </a>
-          
-            <div class="navbar-dropdown is-right">              
+
+            <div class="navbar-dropdown is-right">
                 <a class="navbar-item">
                   <span class="icon is-small">
                     <i class="fa fa-user-o"></i>
                   </span>
-                  Profile
+                  &nbsp; Profile
                 </a>
                 <hr class="navbar-divider">
                 <a class="navbar-item">
                   <span class="icon is-small">
                     <i class="fa fa-power-off"></i>
                   </span>
-                  Logout
+                  &nbsp; Logout
                 </a>
             </div>
           </div>
@@ -109,10 +109,10 @@
             Administration
           </p>
           <ul class="menu-list">
-            <li><a class="is-active" href="#"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms</a></li>
+            <li><a href="/bulma-admin-dashboard-template/forms.html"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms</a></li>
             <li><a href="/bulma-admin-dashboard-template/ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li>
             <li><a href="/bulma-admin-dashboard-template/tables.html"><span class="icon is-small"><i class="fa fa-table"></i></span> Tables</a></li>
-            <li><a href="/bulma-admin-dashboard-template/presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
+            <li><a class="is-active" href="#"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
 
             <li>
               <a class=""><i class="fa fa-cog"></i></span> Settings</a>
@@ -138,14 +138,14 @@
         <nav class="breadcrumb is-small" aria-label="breadcrumbs">
           <ul>
             <li><a href="#">Home</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Forms</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Presentations</a></li>
           </ul>
         </nav>
 
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-              <div class="title">Forms (<a href="http://bulma.io/documentation/form/general/">read more</a>)</div>
+              <div class="title">Presentations</div>
             </div>
           </div>
           <div class="level-right">
@@ -158,152 +158,58 @@
         </div>
 
         <div class="columns is-multiline">
-          <div class="column is-9">
-
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">From</label>
+          <div class="column is-6">
+            <article class="message is-dark">
+              <div class="message-header">
+                <p>Chart</p>
               </div>
-              <div class="field-body">
-                <div class="field">
-                  <p class="control is-expanded has-icons-left">
-                    <input class="input" type="text" placeholder="Name">
-                    <span class="icon is-small is-left">
-                      <i class="fa fa-user"></i>
-                    </span>
-                  </p>
-                </div>
-                <div class="field">
-                  <p class="control is-expanded has-icons-left has-icons-right">
-                    <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
-                    <span class="icon is-small is-left">
-                      <i class="fa fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                      <i class="fa fa-check"></i>
-                    </span>
-                  </p>
-                </div>
+              <div class="message-body">
+                <div id="chartLine" style="width: 100%;"></div>
               </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label"></div>
-              <div class="field-body">
-                <div class="field is-expanded">
-                  <div class="field has-addons">
-                    <p class="control">
-                      <a class="button is-static">
-                        +44
-                      </a>
-                    </p>
-                    <p class="control is-expanded">
-                      <input class="input" type="tel" placeholder="Your phone number">
-                    </p>
-                  </div>
-                  <p class="help">Do not enter the first zero</p>
-                </div>
+            </article>
+          </div>
+          <div class="column is-6">
+            <article class="message is-dark">
+              <div class="message-header">
+                <p>Chart</p>
               </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Department</label>
+              <div class="message-body">
+                <div id="chartScatter" style="width: 100%;"></div>
               </div>
-              <div class="field-body">
-                <div class="field is-narrow">
-                  <div class="control">
-                    <div class="select is-fullwidth">
-                      <select>
-                        <option>Business development</option>
-                        <option>Marketing</option>
-                        <option>Sales</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+            </article>
+          </div>
+          <div class="column is-6">
+            <article class="message is-dark">
+              <div class="message-header">
+                <p>Chart</p>
               </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label">
-                <label class="label">Already a member?</label>
+              <div class="message-body">
+                <div id="chartDoughnut" style="width: 100%;"></div>
               </div>
-              <div class="field-body">
-                <div class="field is-narrow">
-                  <div class="control">
-                    <label class="radio">
-                      <input type="radio" name="member">
-                      Yes
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="member">
-                      No
-                    </label>
-                  </div>
-                </div>
+            </article>
+          </div>
+          <div class="column is-6">
+            <article class="message is-dark">
+              <div class="message-header">
+                <p>Chart</p>
               </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Subject</label>
+              <div class="message-body">
+                <div id="chartBar" style="width: 100%;"></div>
               </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
-                  </div>
-                  <p class="help is-danger">
-                    This field is required
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Question</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="field is-horizontal">
-              <div class="field-label">
-                <!-- Left empty for spacing -->
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-primary">
-                      Send message
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
+            </article>
           </div>
         </div>
-
       </main>
     </div>
   </div>
 
-  <script src="/bulma-admin-dashboard-template/dist/build.js"></script>
+
 
   <!-- GOOGLE ANALYTICS AND FRIENDS -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5442972248172818" data-ad-slot="1487770485" data-ad-format="auto"></ins>
   <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
   <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.mazipan.github.io/","name":"Irfan Maulana | Front End Developer","author":"Irfan Maulana","image":"http://mazipan.github.io/images/irfan-maulana.jpg","description":"Irfan Maulana is Front End Developer from Indonesia - Man that craft some code to build a beauty and readable code, experienced in web and desktop technology.","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script> <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","email":"mailto:mazipanneh@gmail.com","image":"http://mazipan.github.io/images/irfan-maulana.jpg","jobTitle":"Software Engineer","name":"Irfan Maulana","url":"https://www.mazipan.github.io/","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script>
   <script type="application/ld+json">

@@ -1,0 +1,127 @@
+@import "~bulma-dracula/src/bulma-dracula.scss";
+
+$theme: #44475a;
+$selected: #6272a4;
+$text: #f8f8f2;
+$cyan: #8be9fd;
+
+.nav-tag{
+  padding-right: 30px;
+}
+.tag-notif{
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+
+  @media (max-width: 768px) {
+    margin-left: -2px;
+  }
+}
+.hero{
+  background-color: $theme;
+}
+.navbar{
+  background: $theme;
+
+  &-item{
+    background-color: $theme;
+    color: $text !important;
+    &.is-active{
+      background-color: $selected !important;
+      color: $text !important;
+    }
+    &:hover {
+      background-color: $selected !important;
+      color: $text !important;
+    }
+  }
+
+  .is--brand{
+    &:hover {
+      background-color: $theme !important;
+    }
+  }
+
+  &-brand-logo{
+    max-height: 3rem !important;
+    background-color: $theme;
+    border-radius: .25em;
+    padding: .25em;
+  }
+
+  &-dropdown{
+    background-color: $theme;
+    .navbar-item{
+      background-color: $theme;
+    }
+  }
+
+  &-burger{
+    background-color: $theme !important;
+    border: 0;
+    span{
+      background-color: $cyan;
+    }
+  }
+
+  &-link{
+    color: $text;
+
+    figure{
+      img{
+        border-radius: 50%;
+        max-height: 2em;
+      }
+    }
+
+    &:hover{
+      background-color: $theme;
+    }
+  }
+}
+
+.message.is-dark{
+  .message-body{
+    background-color: lighten($theme, 5%);
+  }
+}
+
+.breadcrumb:not(:last-child){
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: $theme;
+  }
+}
+// navigation left area
+.aside{
+  background: $theme;
+  padding: 2em .2em 0 1em;
+
+  a{
+    color: $text;
+  }
+
+  .menu-list {
+    li {
+      margin-top: .5em;
+    }
+  }
+}
+
+// main area
+.main{
+  padding: 2em 1em 0 1em;
+}
+
+.menu-label{
+  color: $cyan;
+  margin-left: .5em;
+}
+
+.block{
+  margin-top: .5em;
+}
