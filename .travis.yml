@@ -4,6 +4,7 @@ branches:
   only:
   - master
   - /^greenkeeper/.*$/
+  - /^renovate/.*$/
 cache:
   yarn: true
   directories:
