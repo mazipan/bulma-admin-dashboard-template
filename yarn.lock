@@ -953,10 +953,10 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-apexcharts@3.6.4:
-  version "3.6.4"
-  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.6.4.tgz#f11cdff2ec4a5a8fd4e82d106356015704624d44"
-  integrity sha512-jr4LrJUGyNnk9SWYriV2FOukUIcoBi0wgeZgCuFpPQb+SeggL6u8NDHSmJU/1ZQ6EBcLgEs6fEmAfRS6DSzA5w==
+apexcharts@3.6.11:
+  version "3.6.11"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.6.11.tgz#495a15cd15fa4b22e7bd8dd3462b1b22fc40f849"
+  integrity sha512-DRrvTsPomPEY0Uxzn96n5Xug+coPs9l3qHjfAujye15vIVobTFblWycpnmF9AJY89gbqeI4lL4u03aUzmM6k2Q==
   dependencies:
     promise-polyfill "8.1.0"
     svg.draggable.js "^2.2.1"
