@@ -1,9 +1,14 @@
 const path = require('path')
+const glob = require('glob')
 const webpack = require('webpack')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const SRC = path.resolve(__dirname, 'src');
 const NODE_ENV = process.env.NODE_ENV;
@@ -48,6 +53,7 @@ module.exports = {
   },
   mode: isDev() ? 'development' : 'production',
   optimization:{
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     runtimeChunk: false,
     splitChunks: {
       chunks: "all",
@@ -113,6 +119,9 @@ module.exports = {
     new CopyPlugin([
       { from: 'src/logo.png', to: '.' }
     ]),
+    new PurgecssPlugin({
+      paths: glob.sync(`${SRC}/*`)
+    }),
     new CompressionPlugin({
       algorithm: 'gzip'
     })
