@@ -35,12 +35,12 @@
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "1.4.1",
-    "upath": "1.1.2",
+    "upath": "1.2.0",
     "webpack": "4.39.3",
     "webpack-cli": "3.3.7",
     "webpack-dev-server": "3.8.0"
   },
   "resolutions": {
-    "upath": "1.1.2"
+    "upath": "1.2.0"
   }
 }
