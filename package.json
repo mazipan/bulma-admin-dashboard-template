@@ -15,8 +15,8 @@
     "bulma-dracula": "1.0.3"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
     "apexcharts": "3.8.5",
     "babel-loader": "8.0.6",
     "chart.js": "2.8.0",
