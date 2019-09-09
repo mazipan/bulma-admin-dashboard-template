@@ -17,7 +17,7 @@
   "devDependencies": {
     "@babel/core": "7.6.0",
     "@babel/preset-env": "7.6.0",
-    "apexcharts": "3.8.5",
+    "apexcharts": "3.8.6",
     "babel-loader": "8.0.6",
     "chart.js": "2.8.0",
     "compression-webpack-plugin": "3.0.0",
