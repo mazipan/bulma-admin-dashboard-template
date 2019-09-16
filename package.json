@@ -34,7 +34,7 @@
     "rimraf": "3.0.0",
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
-    "terser-webpack-plugin": "2.0.1",
+    "terser-webpack-plugin": "2.1.0",
     "upath": "1.2.0",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.8",
