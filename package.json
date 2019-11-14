@@ -19,7 +19,7 @@
     "@babel/preset-env": "7.7.1",
     "apexcharts": "3.10.1",
     "babel-loader": "8.0.6",
-    "chart.js": "2.9.2",
+    "chart.js": "2.9.3",
     "compression-webpack-plugin": "3.0.0",
     "copy-webpack-plugin": "5.0.5",
     "cross-env": "6.0.3",
