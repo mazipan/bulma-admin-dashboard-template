@@ -23,7 +23,7 @@
     "compression-webpack-plugin": "3.0.0",
     "copy-webpack-plugin": "5.1.0",
     "cross-env": "6.0.3",
-    "css-loader": "3.2.1",
+    "css-loader": "3.3.0",
     "file-loader": "4.3.0",
     "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
