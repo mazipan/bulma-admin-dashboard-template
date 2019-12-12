@@ -21,7 +21,7 @@
     "babel-loader": "8.0.6",
     "chart.js": "2.9.3",
     "compression-webpack-plugin": "3.0.1",
-    "copy-webpack-plugin": "5.1.0",
+    "copy-webpack-plugin": "5.1.1",
     "cross-env": "6.0.3",
     "css-loader": "3.3.0",
     "file-loader": "4.3.0",
