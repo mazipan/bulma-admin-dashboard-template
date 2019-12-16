@@ -36,7 +36,7 @@
     "style-loader": "1.0.1",
     "terser-webpack-plugin": "2.3.0",
     "upath": "1.2.0",
-    "webpack": "4.41.2",
+    "webpack": "4.41.3",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
   },
