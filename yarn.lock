@@ -999,10 +999,10 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-apexcharts@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.12.0.tgz#1a48fe0f7e90af97c01a6c3982b5f556790a921b"
-  integrity sha512-Em5dNm8ToIzXbqkoA9ABjzDIR4lngRD/k40YZihuVmoA15D5QpeNDeZg2wsoE3s3PvDA3HTz6aHniKAaHFWggg==
+apexcharts@3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.13.0.tgz#e74c0edfe83164987b409d82138aa8ab6e320a02"
+  integrity sha512-yXQ6HZHBu34nQsowx1dk861jK1kg2q+gpU8VE3J2g32FfQvH9QKuppigkdmu8JysjOZB4YPIEh3vUuUVXouhkA==
   dependencies:
     svg.draggable.js "^2.2.2"
     svg.easing.js "^2.0.0"
