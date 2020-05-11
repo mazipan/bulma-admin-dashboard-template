@@ -120,7 +120,7 @@ module.exports = {
       { from: 'src/logo.png', to: '.' }
     ]),
     new PurgecssPlugin({
-      paths: glob.sync(`${SRC}/*`)
+      paths: glob.sync(`${SRC}/*`, { nodir: true })
     }),
     new CompressionPlugin({
       algorithm: 'gzip'
