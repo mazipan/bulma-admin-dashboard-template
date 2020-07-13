@@ -4,6 +4,7 @@
 
 [![Travis](https://img.shields.io/travis/mazipan/bulma-admin-dashboard-template.svg)](https://travis-ci.org/mazipan/bulma-admin-dashboard-template) ![Dependencies](https://img.shields.io/david/mazipan/bulma-admin-dashboard-template.svg)
 
+Bulma Admin Dashboard Template is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial
 <a href="https://tracking.gitads.io/?repo=bulma-admin-dashboard-template/"><img src="https://images.gitads.io/bulma-admin-dashboard-template/" alt="GitAds"/></a>
 
 ## Demo
