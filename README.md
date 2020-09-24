@@ -22,6 +22,11 @@
 + Dont forget to upgrade version in `package.json`, if you working to fixing bug then upgrade minor version **1.1.0** -> **1.1.1**, if you are working in feature then upgrade major version **1.1.0** -> **1.2.0**
 + Your pull request are very welcome :pray:
 
+## Support me
+
+- Via [trakteer](https://trakteer.id/mazipan)
+- Direct support, [send me an email](mailto:mazipanneh@gmail.com)
+
 ## Contributing
 
 If you'd like to contribute, head to the [contributing guidelines](/CONTRIBUTING.md). Inside you'll find directions for opening issues, coding standards, and notes on development.
