@@ -1,18 +1,23 @@
 language: node_js
-node_js: '8'
+node_js: '12'
 branches:
   only:
   - master
   - /^greenkeeper/.*$/
-  - /^renovate/.*$/
+
 cache:
-  yarn: true
   directories:
     - node_modules
+
+before_install:
+  - npm install -g pnpm
+
 install:
-  - yarn install
+  - pnpm install
+
 script:
-  - yarn run dist
+  - pnpm run build
+
 deploy:
   provider: pages
   skip-cleanup: true
