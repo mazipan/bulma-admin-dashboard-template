@@ -1,5 +1,5 @@
 dependencies:
-  bulma-dracula: 1.1.0
+  bulma-dracula: 1.1.1
 devDependencies:
   '@babel/core': 7.11.6
   '@babel/preset-env': 7.11.5_@babel+core@7.11.6
@@ -1718,12 +1718,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
-  /bulma-dracula/1.1.0:
+  /bulma-dracula/1.1.1:
     dependencies:
       bulma: 0.9.0
     dev: false
     resolution:
-      integrity: sha512-pyKyVfeTpA46lhixFuhhMZ+YTVg2LG0HSdK4Q3HeM1hgZPcaaN8vZwipdvCdiHU5YSD4YyN23DHaBWQpy9qYCQ==
+      integrity: sha512-iG1cbzAhJF4QgfIYErxpXal4aQhoCctTjgc/qvXsIcHOvwqhrXh4/m5I4XsVpepV5JgQmoYAkkiFy/24+QjLuQ==
   /bulma/0.9.0:
     dev: false
     resolution:
@@ -7940,7 +7940,7 @@ specifiers:
   '@babel/preset-env': 7.11.5
   apexcharts: 3.21.0
   babel-loader: 8.1.0
-  bulma-dracula: ^1.1.0
+  bulma-dracula: ^1.1.1
   compression-webpack-plugin: 6.0.2
   copy-webpack-plugin: 6.1.1
   cross-env: 7.0.2
