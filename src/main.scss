@@ -108,6 +108,38 @@ $cyan: #8be9fd;
   .menu-list {
     li {
       margin-top: .5em;
+      
+    }
+
+    .has-children {
+      max-height: 36px;
+      overflow: hidden;
+      transition: 0.6s max-height ease-out ;
+      position: relative;
+      
+      > a {
+        position: relative;
+      }
+
+      > a::before {
+        content: "\f0d7";
+        font-family: "FontAwesome";
+        transition: .2s ease-out transform;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: rotate(0deg) translateY(-45%);
+        transform-origin: center;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .has-children.open {
+      max-height: 1000px;
+
+      > a::before {
+        transform: rotate(-180deg) translateY(40%);
+      }
     }
   }
 }
