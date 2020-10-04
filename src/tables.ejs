@@ -12,25 +12,7 @@
         <%- include('/sidebar', {activeMenu: 'tables'}) %>
 
         <main class="column main">
-          <nav class="breadcrumb is-small" aria-label="breadcrumbs">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="is-active"><a href="#" aria-current="page">Tables</a></li>
-            </ul>
-          </nav>
-
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <div class="title">Tables (<a href="http://bulma.io/documentation/elements/table/">read more</a>)</div>
-              </div>
-            </div>
-            <div class="level-right">
-              <div class="level-item">
-                <button type="button" class="button is-small">March 8, 2017 - April 6, 2017</button>
-              </div>
-            </div>
-          </div>
+          <%- include('/breadcrumb', {menuTitle: 'Tables', menuIcon: 'fa-table'}) %>
 
           <div class="columns is-multiline">
             <div class="column">
@@ -185,6 +167,95 @@
                   </tr>
                 </tbody>
               </table>
+
+              <a class="button is-primary">
+                <span class="icon is-small"> <i class="fa fa-plus"></i> </span><span>Add New Data</span></a
+              >
+
+              <table class="table is-bordered is-striped is-narrow is-fullwidth mt-4">
+                <thead>
+                  <tr>
+                    <th class=""><abbr title="Group">Grup</abbr></th>
+                    <th class=""><abbr title="Name">Name</abbr></th>
+                    <th><abbr title="City">City</abbr></th>
+                    <th><abbr title="DOB">DOB</abbr></th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>August 12, 1995</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 2</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>December 25, 1996</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 3</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>January 20, 1998</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 4</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>November 9, 1999</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 5</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>January 11, 2001</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
               <nav class="pagination is-centered" role="navigation" aria-label="pagination">
                 <a class="pagination-previous">Previous</a>
                 <a class="pagination-next">Next page</a>
@@ -200,6 +271,8 @@
               </nav>
             </div>
           </div>
+
+          <% include /horizontalAds %>
         </main>
       </div>
     </div>

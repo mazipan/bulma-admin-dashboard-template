@@ -1,64 +1,67 @@
 <header class="hero">
-	<div class="hero-head">
-		<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a class="navbar-item is--brand">
-					<img class="navbar-brand-logo" src="<%= data.config.publicPath %>/img/logo.png"
-						alt="Bulma Admin Template logo" />
-				</a>
-				<a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i
+  <div class="hero-head">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is--brand">
+          <img
+            class="navbar-brand-logo"
+            src="<%= data.config.publicPath %>/img/logo.png"
+            alt="Bulma Admin Template logo"
+          />
+        </a>
+        <!-- <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i
 							class="fa fa-home"></i></span>Home</a>
 				<a class="navbar-item is-tab is-hidden-mobile"
 					href="https://github.com/mazipan/bulma-admin-dashboard-template">Github</a>
 				<a class="navbar-item is-tab is-hidden-mobile" href="<%= data.config.publicPath %>/">Resume
 					Template</a>
-				<a class="navbar-item is-tab is-hidden-mobile" href="#about">About</a>
+				<a class="navbar-item is-tab is-hidden-mobile" href="#about">About</a> -->
 
-				<button class="button navbar-burger" data-target="navMenu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
-			<div class="navbar-menu navbar-end" id="navMenu">
-				<a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
-				<a class="navbar-item is-tab is-hidden-tablet"
-					href="https://github.com/mazipan/bulma-admin-dashboard-template">Github</a>
-				<a class="navbar-item is-tab is-hidden-tablet" href="<%= data.config.publicPath %>/">Resume
-					Template</a>
-				<a class="navbar-item is-tab is-hidden-tablet" href="#about">About</a>
-				<a class="navbar-item nav-tag">
-					<span class="icon is-small">
-						<i class="fa fa-envelope-o"></i>
-					</span>
-					<span class="tag is-primary tag-notif">6</span>
-				</a>
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link" href="https://mazipan.space/">
-						<figure class="image is-32x32" style="margin-right: 0.5em">
-							<img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" />
-						</figure>
-						mazipan
-					</a>
+      <div class="navbar-menu navbar-end" id="navMenu">
+        <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+        <a class="navbar-item is-tab is-hidden-tablet" href="https://github.com/mazipan/bulma-admin-dashboard-template"
+          >Github</a
+        >
+        <a class="navbar-item is-tab is-hidden-tablet" href="<%= data.config.publicPath %>/">Resume Template</a>
+        <a class="navbar-item is-tab is-hidden-tablet" href="#about">About</a>
+        <a class="navbar-item nav-tag">
+          <span class="icon is-small">
+            <i class="fa fa-envelope-o"></i>
+          </span>
+          <span class="tag is-primary tag-notif">6</span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="https://mazipan.space/">
+            <figure class="image is-32x32" style="margin-right: 0.5em">
+              <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" />
+            </figure>
+            mazipan
+          </a>
 
-					<div class="navbar-dropdown is-right">
-						<a class="navbar-item">
-							<span class="icon is-small">
-								<i class="fa fa-user-o"></i>
-							</span>
-							&nbsp; Profile
-						</a>
-						<hr class="navbar-divider" />
-						<a class="navbar-item">
-							<span class="icon is-small">
-								<i class="fa fa-power-off"></i>
-							</span>
-							&nbsp; Logout
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item">
+              <span class="icon is-small">
+                <i class="fa fa-user-o"></i>
+              </span>
+              &nbsp; Profile
+            </a>
+            <hr class="navbar-divider" />
+            <a class="navbar-item">
+              <span class="icon is-small">
+                <i class="fa fa-power-off"></i>
+              </span>
+              &nbsp; Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
