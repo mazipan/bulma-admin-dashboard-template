@@ -14,13 +14,16 @@
 
 ## Development
 
-+ Install latest LTS version Nodejs in https://nodejs.org/en/download/
-+ Install all dependencies with : `npm install`
-+ Run development mode : `npm run dev`
-+ Open browser in : `localhost:4000/bulma-admin-dashboard-template/`
-+ Before commit you can run : `npm run dist`
-+ Dont forget to upgrade version in `package.json`, if you working to fixing bug then upgrade minor version **1.1.0** -> **1.1.1**, if you are working in feature then upgrade major version **1.1.0** -> **1.2.0**
-+ Your pull request are very welcome :pray:
+```
+# Install pnpm
+$ npm i -g pnpm
+
+# Install dependencies
+$ pnpm install
+
+# Run in local
+$ pnpm run dev
+```
 
 ## Support me
 
@@ -31,6 +34,6 @@
 
 If you'd like to contribute, head to the [contributing guidelines](/CONTRIBUTING.md). Inside you'll find directions for opening issues, coding standards, and notes on development.
 
-* * *
+---
 
 Copyright © 2019 by Irfan Maulana
