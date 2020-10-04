@@ -1,0 +1,71 @@
+<% let isActiveClass = function (menu) { return menu === activeMenu ? 'is-active' : '' } %>
+
+<aside class="column is-2 aside">
+  <nav class="menu">
+    <p class="menu-label">General</p>
+    <ul class="menu-list">
+      <li>
+        <a class="<%= isActiveClass('home') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/">
+          <span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard
+        </a>
+      </li>
+    </ul>
+    <p class="menu-label">Administration</p>
+    <ul class="menu-list">
+      <li>
+        <a class="<%= isActiveClass('forms') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/forms/">
+          <span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms
+        </a>
+      </li>
+      <li>
+        <a
+          class="<%= isActiveClass('ui-elements') %> menu--<%= activeMenu %>"
+          href="<%= data.config.publicPath %>/ui-elements/"
+        >
+          <span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements
+        </a>
+      </li>
+      <li>
+        <a class="<%= isActiveClass('tables') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/tables/">
+          <span class="icon is-small"><i class="fa fa-table"></i></span> Tables
+        </a>
+      </li>
+      <li>
+        <a
+          class="<%= isActiveClass('presentations') %> menu--<%= activeMenu %>"
+          href="<%= data.config.publicPath %>/presentations/"
+        >
+          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations
+        </a>
+      </li>
+
+      <li class="has-children">
+        <a class=""><i class="fa fa-cog"></i> Settings</a>
+        <ul>
+          <li><a>Members</a></li>
+          <li><a>Plugins</a></li>
+          <li><a>Add a member</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p class="menu-label">Live On</p>
+    <ul class="menu-list">
+      <li>
+        <a href="<%= data.config.publicPath %>/">
+          <span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages
+        </a>
+      </li>
+      <li>
+        <a href="<%= data.config.publicPath %>/">
+          <span class="icon is-small"><i class="fa fa-windows"></i></span> Extras
+        </a>
+      </li>
+      <li>
+        <a href="<%= data.config.publicPath %>/">
+          <span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
