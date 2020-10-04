@@ -33,5 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     }
+
+    // Get all "has-children" elements
+    var withChildren = document.querySelectorAll(".menu .has-children");
+
+    withChildren.forEach(function(wChildrenEl) {
+      wChildrenEl.addEventListener("click", function() {
+        wChildrenEl.classList.toggle("open");
+        console.log("ok")
+      })
+    })
   
   });
