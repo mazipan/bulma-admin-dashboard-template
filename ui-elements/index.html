@@ -18,7 +18,6 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
 <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-25065548-2');</script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.css" />
   </head>
 
   <body>
@@ -97,7 +96,7 @@
     <p class="menu-label">General</p>
     <ul class="menu-list">
       <li>
-        <a class="is-active menu--home" href="/bulma-admin-dashboard-template/">
+        <a class=" menu--ui-elements" href="/bulma-admin-dashboard-template/">
           <span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard
         </a>
       </li>
@@ -105,26 +104,26 @@
     <p class="menu-label">Administration</p>
     <ul class="menu-list">
       <li>
-        <a class=" menu--home" href="/bulma-admin-dashboard-template/forms/">
+        <a class=" menu--ui-elements" href="/bulma-admin-dashboard-template/forms/">
           <span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms
         </a>
       </li>
       <li>
         <a
-          class=" menu--home"
+          class="is-active menu--ui-elements"
           href="/bulma-admin-dashboard-template/ui-elements/"
         >
           <span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements
         </a>
       </li>
       <li>
-        <a class=" menu--home" href="/bulma-admin-dashboard-template/tables/">
+        <a class=" menu--ui-elements" href="/bulma-admin-dashboard-template/tables/">
           <span class="icon is-small"><i class="fa fa-table"></i></span> Tables
         </a>
       </li>
       <li>
         <a
-          class=" menu--home"
+          class=" menu--ui-elements"
           href="/bulma-admin-dashboard-template/presentations/"
         >
           <span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations
@@ -167,14 +166,16 @@
           <nav class="breadcrumb is-small" aria-label="breadcrumbs">
             <ul>
               <li><a href="#">Home</a></li>
-              <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
+              <li class="is-active"><a href="#" aria-current="page">UI Elements</a></li>
             </ul>
           </nav>
 
           <div class="level">
             <div class="level-left">
               <div class="level-item">
-                <div class="title has-text-primary"><i class="fa fa-tachometer"></i> Dashboard</div>
+                <div class="title">
+                  UI Elements (<a href="http://bulma.io/documentation/elements/box/">read more</a>)
+                </div>
               </div>
             </div>
             <div class="level-right">
@@ -185,152 +186,140 @@
           </div>
 
           <div class="columns is-multiline">
-            <div class="column">
-              <div class="box notification is-primary">
-                <div class="heading">Top Seller Total</div>
-                <div class="title">56,950</div>
-                <div class="level">
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Sales $</div>
-                      <div class="title is-5">250K</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Overall $</div>
-                      <div class="title is-5">750K</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Sales %</div>
-                      <div class="title is-5">25%</div>
-                    </div>
-                  </div>
-                </div>
+            <div class="container block is-clearfix">
+              <h3>Button</h3>
+              <div>
+                <a class="button">Anchor</a>
+                <button class="button">Button</button>
+                <input class="button" type="submit" value="Submit input" />
+                <input class="button" type="reset" value="Reset input" />
               </div>
             </div>
-            <div class="column">
-              <div class="box notification is-warning">
-                <div class="heading">Revenue / Expenses</div>
-                <div class="title">55% / 45%</div>
-                <div class="level">
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Rev Prod $</div>
-                      <div class="title is-5">30%</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Rev Serv $</div>
-                      <div class="title is-5">25%</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Exp %</div>
-                      <div class="title is-5">45%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="box notification is-info">
-                <div class="heading">Feedback Activity</div>
-                <div class="title">78% &uarr;</div>
-                <div class="level">
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Pos</div>
-                      <div class="title is-5">1560</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Neg</div>
-                      <div class="title is-5">368</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Pos/Neg %</div>
-                      <div class="title is-5">77% / 23%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="box notification is-danger">
-                <div class="heading">Orders / Returns</div>
-                <div class="title">75% / 25%</div>
-                <div class="level">
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Orders $</div>
-                      <div class="title is-5">425K</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Returns $</div>
-                      <div class="title is-5">106K</div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="">
-                      <div class="heading">Success %</div>
-                      <div class="title is-5">+ 28,5%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="columns is-multiline">
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartLine" style="width: 100%"></div>
-                </div>
-              </article>
+            <div class="container block is-clearfix">
+              <div>
+                <a class="button is-white">White</a>
+                <a class="button is-light">Light</a>
+                <a class="button is-dark">Dark</a>
+                <a class="button is-black">Black</a>
+                <a class="button is-link">Link</a>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartScatter" style="width: 100%"></div>
-                </div>
-              </article>
+
+            <div class="container block is-clearfix">
+              <div>
+                <a class="button is-primary">Primary</a>
+                <a class="button is-info">Info</a>
+                <a class="button is-success">Success</a>
+                <a class="button is-warning">Warning</a>
+                <a class="button is-danger">Danger</a>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartDoughnut" style="width: 100%"></div>
-                </div>
-              </article>
+
+            <div class="container block is-clearfix">
+              <div>
+                <a class="button is-small">Small</a>
+                <a class="button">Normal</a>
+                <a class="button is-medium">Medium</a>
+                <a class="button is-large">Large</a>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartBar" style="width: 100%"></div>
-                </div>
-              </article>
+
+            <div class="container block is-clearfix">
+              <div>
+                <a class="button is-outlined">Outlined</a>
+                <a class="button is-primary is-outlined">Outlined</a>
+                <a class="button is-info is-outlined">Outlined</a>
+                <a class="button is-success is-outlined">Outlined</a>
+                <a class="button is-danger is-outlined">Outlined</a>
+              </div>
+            </div>
+
+            <div class="container block is-clearfix">
+              <h3>Tag</h3>
+              <div>
+                <span class="tag is-black">Black</span>
+                <span class="tag is-dark">Dark</span>
+                <span class="tag is-light">Light</span>
+                <span class="tag is-white">White</span>
+                <span class="tag is-primary">Primary</span>
+                <span class="tag is-info">Info</span>
+                <span class="tag is-success">Success</span>
+                <span class="tag is-warning">Warning</span>
+                <span class="tag is-danger">Danger</span>
+              </div>
+            </div>
+
+            <div class="container block is-clearfix">
+              <h3>Icon</h3>
+              <div>
+                <span class="icon has-text-info">
+                  <i class="fa fa-info-circle"></i>
+                </span>
+                <span class="icon has-text-success">
+                  <i class="fa fa-check-square"></i>
+                </span>
+                <span class="icon has-text-warning">
+                  <i class="fa fa-warning"></i>
+                </span>
+                <span class="icon has-text-danger">
+                  <i class="fa fa-ban"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="container block is-clearfix">
+              <h3>Image</h3>
+              <figure class="image is-128x128">
+                <img src="http://bulma.io/images/placeholders/256x256.png" />
+              </figure>
+            </div>
+
+            <div class="container block is-clearfix">
+              <h3>Progress</h3>
+              <progress class="progress is-primary" value="30" max="100">30%</progress>
+              <progress class="progress is-info" value="45" max="100">45%</progress>
+              <progress class="progress is-success" value="60" max="100">60%</progress>
+              <progress class="progress is-warning" value="75" max="100">75%</progress>
+              <progress class="progress is-danger" value="90" max="100">90%</progress>
+            </div>
+
+            <div class="container block is-clearfix">
+              <h3>Notification</h3>
+              <div class="notification is-primary">
+                <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+                Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="notification is-info">
+                <button class="delete"></button> Info lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+                Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="notification is-success">
+                <button class="delete"></button> Success lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+                Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="notification is-warning">
+                <button class="delete"></button> Warning lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+                Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="notification is-danger">
+                <button class="delete"></button> Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+                Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+              </div>
             </div>
           </div>
         </main>
@@ -411,7 +400,5 @@
   }
 </script>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.js"></script>
-    <script defer src="/bulma-admin-dashboard-template/js/module-chart.js"></script>
   </body>
 </html>
