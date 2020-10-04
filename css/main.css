@@ -7770,7 +7770,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .aside {
   background: #44475a;
-  padding: 2em .2em 0 1em; }
+  padding: 2em .2em 0 1em;
+  min-height: calc(100vh - 3.25rem); }
   .aside a {
     color: #f8f8f2; }
   .aside .menu-list li {
