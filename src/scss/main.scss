@@ -5,10 +5,6 @@ $selected: #6272a4;
 $text: #f8f8f2;
 $cyan: #8be9fd;
 
-.nav-tag {
-  padding-right: 30px;
-}
-
 .tag-notif {
   border-radius: 50%;
   position: absolute;
@@ -27,18 +23,32 @@ $cyan: #8be9fd;
 .navbar {
   background: $theme;
 
+  .nav-tag {
+    padding-right: 30px;
+  }
+
   &-item {
     background-color: $theme;
     color: $text !important;
 
-    &.is-active {
+    &:not(.nav-tag).is-active {
       background-color: $selected !important;
       color: $text !important;
     }
 
-    &:hover {
+    &:not(.nav-tag):hover {
       background-color: $selected !important;
       color: $text !important;
+    }
+
+    &.nav-tag.is-active {
+      background-color: $theme !important;
+      color: $primary !important;
+    }
+
+    &.nav-tag:hover {
+      background-color: $theme !important;
+      color: $primary !important;
     }
   }
 
@@ -104,6 +114,7 @@ $cyan: #8be9fd;
   .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: $theme;
   }
+
 }
 
 // navigation left area
@@ -138,7 +149,7 @@ $cyan: #8be9fd;
         position: absolute;
         top: 50%;
         right: 10px;
-        transform: rotate(0deg) translateY(-45%);
+        transform: translateY(-45%);
         transform-origin: center;
         transition-duration: 0.3s;
       }
@@ -166,4 +177,9 @@ $cyan: #8be9fd;
 
 .block {
   margin-top: .5em;
+}
+
+.ads-square {
+  min-width: 250px;
+  min-height: 100px;
 }

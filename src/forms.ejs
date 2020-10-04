@@ -12,25 +12,7 @@
         <%- include('/sidebar', {activeMenu: 'forms'}) %>
 
         <main class="column main">
-          <nav class="breadcrumb is-small" aria-label="breadcrumbs">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="is-active"><a href="#" aria-current="page">Forms</a></li>
-            </ul>
-          </nav>
-
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <div class="title">Forms (<a href="http://bulma.io/documentation/form/general/">read more</a>)</div>
-              </div>
-            </div>
-            <div class="level-right">
-              <div class="level-item">
-                <button type="button" class="button is-small">March 8, 2017 - April 6, 2017</button>
-              </div>
-            </div>
-          </div>
+          <%- include('/breadcrumb', {menuTitle: 'Forms', menuIcon: 'fa-tachometer'}) %>
 
           <div class="columns is-multiline">
             <div class="column is-9">
@@ -158,6 +140,8 @@
               </div>
             </div>
           </div>
+
+          <% include /horizontalAds %>
         </main>
       </div>
     </div>

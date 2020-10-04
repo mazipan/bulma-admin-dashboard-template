@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <% include /metaTags %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.css" />
   </head>
 
   <body>
@@ -10,10 +9,10 @@
 
     <div class="wrapper">
       <div class="columns">
-        <%- include('/sidebar', {activeMenu: 'home'}) %>
+        <%- include('/sidebar', {activeMenu: 'additional'}) %>
 
         <main class="column main">
-          <%- include('/breadcrumb', {menuTitle: 'Dashboard', menuIcon: 'fa-tachometer'}) %>
+          <%- include('/breadcrumb', {menuTitle: 'Extras', menuIcon: 'fa-windows'}) %>
 
           <div class="columns is-multiline">
             <div class="column">
@@ -122,56 +121,11 @@
             </div>
           </div>
 
-          <div class="columns is-multiline">
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartLine" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartScatter" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartDoughnut" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartBar" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-          </div>
-
           <% include /horizontalAds %>
         </main>
       </div>
     </div>
 
     <% include /jsonLd %>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.js"></script>
-    <script defer src="<%= data.config.publicPath %>/js/module-chart.js"></script>
   </body>
 </html>
