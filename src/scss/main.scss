@@ -121,6 +121,7 @@ $cyan: #8be9fd;
 .aside {
   background: $theme;
   padding: 2em .2em 0 1em;
+  min-height: calc(100vh - 3.25rem);
 
   a {
     color: $text;
