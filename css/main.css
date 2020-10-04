@@ -7702,9 +7702,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #282a36;
   padding: 3rem 1.5rem 6rem; }
 
-.nav-tag {
-  padding-right: 30px; }
-
 .tag-notif {
   border-radius: 50%;
   position: absolute;
@@ -7719,15 +7716,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .navbar {
   background: #44475a; }
+  .navbar .nav-tag {
+    padding-right: 30px; }
   .navbar-item {
     background-color: #44475a;
     color: #f8f8f2 !important; }
-    .navbar-item.is-active {
+    .navbar-item:not(.nav-tag).is-active {
       background-color: #6272a4 !important;
       color: #f8f8f2 !important; }
-    .navbar-item:hover {
+    .navbar-item:not(.nav-tag):hover {
       background-color: #6272a4 !important;
       color: #f8f8f2 !important; }
+    .navbar-item.nav-tag.is-active {
+      background-color: #44475a !important;
+      color: #bd93f9 !important; }
+    .navbar-item.nav-tag:hover {
+      background-color: #44475a !important;
+      color: #bd93f9 !important; }
   .navbar .is--brand:hover {
     background-color: #44475a !important; }
   .navbar-brand-logo {
@@ -7784,7 +7789,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       position: absolute;
       top: 50%;
       right: 10px;
-      transform: rotate(0deg) translateY(-45%);
+      transform: translateY(-45%);
       transform-origin: center;
       transition-duration: 0.3s; }
   .aside .menu-list .has-children.open {
@@ -7801,3 +7806,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .block {
   margin-top: .5em; }
+
+.ads-square {
+  min-width: 250px;
+  min-height: 100px; }

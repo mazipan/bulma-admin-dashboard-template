@@ -22,68 +22,71 @@
 
   <body>
     <header class="hero">
-	<div class="hero-head">
-		<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a class="navbar-item is--brand">
-					<img class="navbar-brand-logo" src="/bulma-admin-dashboard-template/img/logo.png"
-						alt="Bulma Admin Template logo" />
-				</a>
-				<a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i
+  <div class="hero-head">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is--brand">
+          <img
+            class="navbar-brand-logo"
+            src="/bulma-admin-dashboard-template/img/logo.png"
+            alt="Bulma Admin Template logo"
+          />
+        </a>
+        <!-- <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i
 							class="fa fa-home"></i></span>Home</a>
 				<a class="navbar-item is-tab is-hidden-mobile"
 					href="https://github.com/mazipan/bulma-admin-dashboard-template">Github</a>
 				<a class="navbar-item is-tab is-hidden-mobile" href="/bulma-admin-dashboard-template/">Resume
 					Template</a>
-				<a class="navbar-item is-tab is-hidden-mobile" href="#about">About</a>
+				<a class="navbar-item is-tab is-hidden-mobile" href="#about">About</a> -->
 
-				<button class="button navbar-burger" data-target="navMenu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
-			<div class="navbar-menu navbar-end" id="navMenu">
-				<a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
-				<a class="navbar-item is-tab is-hidden-tablet"
-					href="https://github.com/mazipan/bulma-admin-dashboard-template">Github</a>
-				<a class="navbar-item is-tab is-hidden-tablet" href="/bulma-admin-dashboard-template/">Resume
-					Template</a>
-				<a class="navbar-item is-tab is-hidden-tablet" href="#about">About</a>
-				<a class="navbar-item nav-tag">
-					<span class="icon is-small">
-						<i class="fa fa-envelope-o"></i>
-					</span>
-					<span class="tag is-primary tag-notif">6</span>
-				</a>
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link" href="https://mazipan.space/">
-						<figure class="image is-32x32" style="margin-right: 0.5em">
-							<img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" />
-						</figure>
-						mazipan
-					</a>
+      <div class="navbar-menu navbar-end" id="navMenu">
+        <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+        <a class="navbar-item is-tab is-hidden-tablet" href="https://github.com/mazipan/bulma-admin-dashboard-template"
+          >Github</a
+        >
+        <a class="navbar-item is-tab is-hidden-tablet" href="/bulma-admin-dashboard-template/">Resume Template</a>
+        <a class="navbar-item is-tab is-hidden-tablet" href="#about">About</a>
+        <a class="navbar-item nav-tag">
+          <span class="icon is-small">
+            <i class="fa fa-envelope-o"></i>
+          </span>
+          <span class="tag is-primary tag-notif">6</span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="https://mazipan.space/">
+            <figure class="image is-32x32" style="margin-right: 0.5em">
+              <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" />
+            </figure>
+            mazipan
+          </a>
 
-					<div class="navbar-dropdown is-right">
-						<a class="navbar-item">
-							<span class="icon is-small">
-								<i class="fa fa-user-o"></i>
-							</span>
-							&nbsp; Profile
-						</a>
-						<hr class="navbar-divider" />
-						<a class="navbar-item">
-							<span class="icon is-small">
-								<i class="fa fa-power-off"></i>
-							</span>
-							&nbsp; Logout
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item">
+              <span class="icon is-small">
+                <i class="fa fa-user-o"></i>
+              </span>
+              &nbsp; Profile
+            </a>
+            <hr class="navbar-divider" />
+            <a class="navbar-item">
+              <span class="icon is-small">
+                <i class="fa fa-power-off"></i>
+              </span>
+              &nbsp; Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
 
@@ -92,11 +95,11 @@
         
 
 <aside class="column is-2 aside">
-  <nav class="menu">
+  <nav class="menu active-menu--tables">
     <p class="menu-label">General</p>
     <ul class="menu-list">
       <li>
-        <a class=" menu--tables" href="/bulma-admin-dashboard-template/">
+        <a class="" href="/bulma-admin-dashboard-template/">
           <span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard
         </a>
       </li>
@@ -104,28 +107,22 @@
     <p class="menu-label">Administration</p>
     <ul class="menu-list">
       <li>
-        <a class=" menu--tables" href="/bulma-admin-dashboard-template/forms/">
+        <a class="" href="/bulma-admin-dashboard-template/forms/">
           <span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms
         </a>
       </li>
       <li>
-        <a
-          class=" menu--tables"
-          href="/bulma-admin-dashboard-template/ui-elements/"
-        >
+        <a class="" href="/bulma-admin-dashboard-template/ui-elements/">
           <span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements
         </a>
       </li>
       <li>
-        <a class="is-active menu--tables" href="/bulma-admin-dashboard-template/tables/">
+        <a class="is-active" href="/bulma-admin-dashboard-template/tables/">
           <span class="icon is-small"><i class="fa fa-table"></i></span> Tables
         </a>
       </li>
       <li>
-        <a
-          class=" menu--tables"
-          href="/bulma-admin-dashboard-template/presentations/"
-        >
+        <a class="" href="/bulma-admin-dashboard-template/presentations/">
           <span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations
         </a>
       </li>
@@ -143,45 +140,56 @@
     <p class="menu-label">Live On</p>
     <ul class="menu-list">
       <li>
-        <a href="/bulma-admin-dashboard-template/">
+        <a class="" href="/bulma-admin-dashboard-template/additional/">
           <span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages
         </a>
       </li>
       <li>
-        <a href="/bulma-admin-dashboard-template/">
+        <a class="" href="/bulma-admin-dashboard-template/extras/">
           <span class="icon is-small"><i class="fa fa-windows"></i></span> Extras
         </a>
       </li>
-      <li>
-        <a href="/bulma-admin-dashboard-template/">
-          <span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page
-        </a>
-      </li>
     </ul>
+
+    <div class="ads-square">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-gw-3+1f-3d+2z"
+        data-ad-client="ca-pub-5442972248172818"
+        data-ad-slot="9533807764"
+      ></ins>
+      <script>
+        ;(adsbygoogle = window.adsbygoogle || []).push({})
+      </script>
+    </div>
   </nav>
 </aside>
 
 
         <main class="column main">
           <nav class="breadcrumb is-small" aria-label="breadcrumbs">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="is-active"><a href="#" aria-current="page">Tables</a></li>
-            </ul>
-          </nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li class="is-active"><a href="#" aria-current="page">Tables</a></li>
+  </ul>
+</nav>
 
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <div class="title">Tables (<a href="http://bulma.io/documentation/elements/table/">read more</a>)</div>
-              </div>
-            </div>
-            <div class="level-right">
-              <div class="level-item">
-                <button type="button" class="button is-small">March 8, 2017 - April 6, 2017</button>
-              </div>
-            </div>
-          </div>
+<div class="level mt-2 mr-2">
+  <div class="level-left">
+    <div class="level-item">
+      <div class="title has-text-primary"><i class="fa fa-table"></i> Tables</div>
+    </div>
+  </div>
+  <div class="level-right">
+    <div class="level-item">
+      <button type="button" class="button is-small">March 8, 2017 - April 6, 2017</button>
+    </div>
+  </div>
+</div>
+
 
           <div class="columns is-multiline">
             <div class="column">
@@ -336,6 +344,95 @@
                   </tr>
                 </tbody>
               </table>
+
+              <a class="button is-primary">
+                <span class="icon is-small"> <i class="fa fa-plus"></i> </span><span>Add New Data</span></a
+              >
+
+              <table class="table is-bordered is-striped is-narrow is-fullwidth mt-4">
+                <thead>
+                  <tr>
+                    <th class=""><abbr title="Group">Grup</abbr></th>
+                    <th class=""><abbr title="Name">Name</abbr></th>
+                    <th><abbr title="City">City</abbr></th>
+                    <th><abbr title="DOB">DOB</abbr></th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>August 12, 1995</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 2</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>December 25, 1996</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 3</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>January 20, 1998</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 4</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>November 9, 1999</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Irfan Maulana 5</td>
+                    <td>Jakarta, Indonesia</td>
+                    <td>January 11, 2001</td>
+                    <td>
+                      <a class="button is-primary">
+                        <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
+                      >
+                      <a class="button is-danger">
+                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
               <nav class="pagination is-centered" role="navigation" aria-label="pagination">
                 <a class="pagination-previous">Previous</a>
                 <a class="pagination-next">Next page</a>
@@ -351,6 +448,19 @@
               </nav>
             </div>
           </div>
+
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Horizontal Ads Banner -->
+<ins
+  class="adsbygoogle"
+  style="display: inline-block; width: 728px; height: 90px"
+  data-ad-client="ca-pub-5442972248172818"
+  data-ad-slot="7319719723"
+></ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
         </main>
       </div>
     </div>

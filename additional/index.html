@@ -18,7 +18,6 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
 <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-25065548-2');</script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.css" />
   </head>
 
   <body>
@@ -96,7 +95,7 @@
         
 
 <aside class="column is-2 aside">
-  <nav class="menu active-menu--presentations">
+  <nav class="menu active-menu--additional">
     <p class="menu-label">General</p>
     <ul class="menu-list">
       <li>
@@ -123,7 +122,7 @@
         </a>
       </li>
       <li>
-        <a class="is-active" href="/bulma-admin-dashboard-template/presentations/">
+        <a class="" href="/bulma-admin-dashboard-template/presentations/">
           <span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations
         </a>
       </li>
@@ -141,7 +140,7 @@
     <p class="menu-label">Live On</p>
     <ul class="menu-list">
       <li>
-        <a class="" href="/bulma-admin-dashboard-template/additional/">
+        <a class="is-active" href="/bulma-admin-dashboard-template/additional/">
           <span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages
         </a>
       </li>
@@ -174,14 +173,14 @@
           <nav class="breadcrumb is-small" aria-label="breadcrumbs">
   <ul>
     <li><a href="/">Home</a></li>
-    <li class="is-active"><a href="#" aria-current="page">Presentations</a></li>
+    <li class="is-active"><a href="#" aria-current="page">Additional Pages</a></li>
   </ul>
 </nav>
 
 <div class="level mt-2 mr-2">
   <div class="level-left">
     <div class="level-item">
-      <div class="title has-text-primary"><i class="fa fa-bar-chart"></i> Presentations</div>
+      <div class="title has-text-primary"><i class="fa fa-bug"></i> Additional Pages</div>
     </div>
   </div>
   <div class="level-right">
@@ -193,45 +192,109 @@
 
 
           <div class="columns is-multiline">
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
+            <div class="column">
+              <div class="box notification is-primary">
+                <div class="heading">Top Seller Total</div>
+                <div class="title">56,950</div>
+                <div class="level">
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Sales $</div>
+                      <div class="title is-5">250K</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Overall $</div>
+                      <div class="title is-5">750K</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Sales %</div>
+                      <div class="title is-5">25%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="message-body">
-                  <div id="chartLine" style="width: 100%"></div>
-                </div>
-              </article>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
+            <div class="column">
+              <div class="box notification is-warning">
+                <div class="heading">Revenue / Expenses</div>
+                <div class="title">55% / 45%</div>
+                <div class="level">
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Rev Prod $</div>
+                      <div class="title is-5">30%</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Rev Serv $</div>
+                      <div class="title is-5">25%</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Exp %</div>
+                      <div class="title is-5">45%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="message-body">
-                  <div id="chartScatter" style="width: 100%"></div>
-                </div>
-              </article>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
+            <div class="column">
+              <div class="box notification is-info">
+                <div class="heading">Feedback Activity</div>
+                <div class="title">78% &uarr;</div>
+                <div class="level">
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Pos</div>
+                      <div class="title is-5">1560</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Neg</div>
+                      <div class="title is-5">368</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Pos/Neg %</div>
+                      <div class="title is-5">77% / 23%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="message-body">
-                  <div id="chartDoughnut" style="width: 100%"></div>
-                </div>
-              </article>
+              </div>
             </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
+            <div class="column">
+              <div class="box notification is-danger">
+                <div class="heading">Orders / Returns</div>
+                <div class="title">75% / 25%</div>
+                <div class="level">
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Orders $</div>
+                      <div class="title is-5">425K</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Returns $</div>
+                      <div class="title is-5">106K</div>
+                    </div>
+                  </div>
+                  <div class="level-item">
+                    <div class="">
+                      <div class="heading">Success %</div>
+                      <div class="title is-5">+ 28,5%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="message-body">
-                  <div id="chartBar" style="width: 100%"></div>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
 
@@ -325,7 +388,5 @@
   }
 </script>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.js"></script>
-    <script defer src="/bulma-admin-dashboard-template/js/module-chart.js"></script>
   </body>
 </html>
