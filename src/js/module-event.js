@@ -36,12 +36,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Get all "has-children" elements
     var withChildren = document.querySelectorAll(".menu .has-children");
+    var sidebar = document.querySelector("#main-sidebar");
 
     withChildren.forEach(function(wChildrenEl) {
       wChildrenEl.addEventListener("click", function() {
         wChildrenEl.classList.toggle("open");
-        console.log("ok")
+        if (sidebar.classList.contains("closed"))
+          sidebar.classList.remove("closed");
       })
+    })
+
+    // Toggle sidebar
+    var sidebarToggler = document.querySelector("#sidebar-toggler");
+    var sidebar = document.querySelector("#main-sidebar");
+    
+    sidebarToggler.addEventListener("click", function() {
+      sidebar.classList.toggle("closed");
+      if (sidebar.classList.contains("closed")) {
+        withChildren.forEach(function(wChildrenEl) {
+          wChildrenEl.classList.remove("open");
+        })
+      }
     })
   
   });
