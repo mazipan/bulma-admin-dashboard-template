@@ -121,7 +121,11 @@ $cyan: #8be9fd;
 .aside {
   background: $theme;
   padding: 2em .2em 0 1em;
-  min-height: calc(100vh - 3.25rem);
+  height: calc(100vh - 3rem);
+  overflow: hidden;
+  transition: 0.2s width ease-out; 
+  position: relative;
+
 
   a {
     color: $text;
@@ -163,6 +167,51 @@ $cyan: #8be9fd;
         transform: rotate(-180deg) translateY(40%);
       }
     }
+
+    .icon, i {
+      margin-right: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  #sidebar-toggler {
+    width: 95%;
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    background-color: #bd93f9;
+    margin: 0 -1rem 0 -0.25rem;
+    padding: .8rem 01rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      transition: 0.3s linear transform;
+    }
+    
+  }
+
+  &.column.is-2.closed {
+    width: 60px;
+
+    .menu-label, .menu-text {
+      display: none;
+    }
+
+    .has-children {
+      >a::before {
+        opacity: 0;
+      }
+    }
+
+    #sidebar-toggler {
+      justify-content: center;
+      .icon {
+        transform: rotate(180deg);
+        margin-right: 8px;
+      }
+    }
+
   }
 }
 
