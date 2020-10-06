@@ -1,4 +1,5 @@
 dependencies:
+  animate.css: 4.1.1
   bulma: 0.9.1
   bulma-dracula: 1.1.1
 devDependencies:
@@ -162,6 +163,10 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  /animate.css/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
   /ansi-regex/2.1.1:
     dev: true
     engines:
@@ -4760,6 +4765,7 @@ packages:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 specifiers:
   '@11ty/eleventy': ^0.11.0
+  animate.css: ^4.1.1
   bulma: ^0.9.1
   bulma-dracula: ^1.1.1
   cross-env: 7.0.2

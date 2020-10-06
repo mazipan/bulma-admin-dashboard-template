@@ -6,7 +6,7 @@
     <ul class="menu-list">
       <li>
         <a class="<%= isActiveClass('home') %>" href="<%= data.config.publicPath %>/">
-          <span class="icon is-small"><i class="fa fa-tachometer"></i></span>  <span class="menu-text">Dashboard</span>
+          <span class="icon is-small"><i class="fa fa-tachometer"></i></span> <span class="menu-text">Dashboard</span>
         </a>
       </li>
     </ul>
@@ -19,23 +19,24 @@
       </li>
       <li>
         <a class="<%= isActiveClass('ui-elements') %>" href="<%= data.config.publicPath %>/ui-elements/">
-          <span class="icon is-small"><i class="fa fa-desktop"></i></span>  <span class="menu-text">UI Elements</span>
+          <span class="icon is-small"><i class="fa fa-desktop"></i></span> <span class="menu-text">UI Elements</span>
         </a>
       </li>
       <li>
         <a class="<%= isActiveClass('tables') %>" href="<%= data.config.publicPath %>/tables/">
-          <span class="icon is-small"><i class="fa fa-table"></i></span>  <span class="menu-text">Tables</span>
+          <span class="icon is-small"><i class="fa fa-table"></i></span> <span class="menu-text">Tables</span>
         </a>
       </li>
       <li>
         <a class="<%= isActiveClass('presentations') %>" href="<%= data.config.publicPath %>/presentations/">
-          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span>  <span class="menu-text">Presentations</span>
+          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span>
+          <span class="menu-text">Presentations</span>
         </a>
       </li>
 
       <li class="has-children">
         <a class=""
-          ><span class="icon is-small"><i class="fa fa-cog"></i></span>  <span class="menu-text">Settings</span></a
+          ><span class="icon is-small"><i class="fa fa-cog"></i></span> <span class="menu-text">Layouts</span></a
         >
         <ul>
           <li><a>Members</a></li>
@@ -75,5 +76,7 @@
     </div>
   </nav>
 
-  <div id="sidebar-toggler"><span class="icon is-small"><i class="fa fa-arrow-left"></i></span></div>
+  <div id="sidebar-toggler">
+    <span class="icon is-small"><i class="fa fa-angle-double-left"></i></span>
+  </div>
 </aside>
