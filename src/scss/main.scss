@@ -5,10 +5,6 @@ $selected: #6272a4;
 $text: #f8f8f2;
 $cyan: #8be9fd;
 
-.nav-tag {
-  padding-right: 30px;
-}
-
 .tag-notif {
   border-radius: 50%;
   position: absolute;
@@ -27,18 +23,32 @@ $cyan: #8be9fd;
 .navbar {
   background: $theme;
 
+  .nav-tag {
+    padding-right: 30px;
+  }
+
   &-item {
     background-color: $theme;
     color: $text !important;
 
-    &.is-active {
+    &:not(.nav-tag).is-active {
       background-color: $selected !important;
       color: $text !important;
     }
 
-    &:hover {
+    &:not(.nav-tag):hover {
       background-color: $selected !important;
       color: $text !important;
+    }
+
+    &.nav-tag.is-active {
+      background-color: $theme !important;
+      color: $primary !important;
+    }
+
+    &.nav-tag:hover {
+      background-color: $theme !important;
+      color: $primary !important;
     }
   }
 
@@ -104,12 +114,18 @@ $cyan: #8be9fd;
   .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: $theme;
   }
+
 }
 
 // navigation left area
 .aside {
   background: $theme;
   padding: 2em .2em 0 1em;
+  height: calc(100vh - 3rem);
+  overflow: hidden;
+  transition: 0.2s width ease-out; 
+  position: relative;
+
 
   a {
     color: $text;
@@ -138,7 +154,7 @@ $cyan: #8be9fd;
         position: absolute;
         top: 50%;
         right: 10px;
-        transform: rotate(0deg) translateY(-45%);
+        transform: translateY(-45%);
         transform-origin: center;
         transition-duration: 0.3s;
       }
@@ -151,6 +167,51 @@ $cyan: #8be9fd;
         transform: rotate(-180deg) translateY(40%);
       }
     }
+
+    .icon, i {
+      margin-right: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  #sidebar-toggler {
+    width: 95%;
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    background-color: #bd93f9;
+    margin: 0 -1rem 0 -0.25rem;
+    padding: .8rem 01rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      transition: 0.3s linear transform;
+    }
+    
+  }
+
+  &.column.is-2.closed {
+    width: 60px;
+
+    .menu-label, .menu-text {
+      display: none;
+    }
+
+    .has-children {
+      >a::before {
+        opacity: 0;
+      }
+    }
+
+    #sidebar-toggler {
+      justify-content: center;
+      .icon {
+        transform: rotate(180deg);
+        margin-right: 8px;
+      }
+    }
+
   }
 }
 
@@ -166,4 +227,9 @@ $cyan: #8be9fd;
 
 .block {
   margin-top: .5em;
+}
+
+.ads-square {
+  min-width: 250px;
+  min-height: 100px;
 }

@@ -1,46 +1,42 @@
 <% let isActiveClass = function (menu) { return menu === activeMenu ? 'is-active' : '' } %>
 
-<aside class="column is-2 aside">
-  <nav class="menu">
+<aside id="main-sidebar" class="column is-2 aside">
+  <nav class="menu active-menu--<%= activeMenu %>">
     <p class="menu-label">General</p>
     <ul class="menu-list">
       <li>
-        <a class="<%= isActiveClass('home') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/">
-          <span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard
+        <a class="<%= isActiveClass('home') %>" href="<%= data.config.publicPath %>/">
+          <span class="icon is-small"><i class="fa fa-tachometer"></i></span>  <span class="menu-text">Dashboard</span>
         </a>
       </li>
     </ul>
     <p class="menu-label">Administration</p>
     <ul class="menu-list">
       <li>
-        <a class="<%= isActiveClass('forms') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/forms/">
-          <span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms
+        <a class="<%= isActiveClass('forms') %>" href="<%= data.config.publicPath %>/forms/">
+          <span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> <span class="menu-text">Forms</span>
         </a>
       </li>
       <li>
-        <a
-          class="<%= isActiveClass('ui-elements') %> menu--<%= activeMenu %>"
-          href="<%= data.config.publicPath %>/ui-elements/"
-        >
-          <span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements
+        <a class="<%= isActiveClass('ui-elements') %>" href="<%= data.config.publicPath %>/ui-elements/">
+          <span class="icon is-small"><i class="fa fa-desktop"></i></span>  <span class="menu-text">UI Elements</span>
         </a>
       </li>
       <li>
-        <a class="<%= isActiveClass('tables') %> menu--<%= activeMenu %>" href="<%= data.config.publicPath %>/tables/">
-          <span class="icon is-small"><i class="fa fa-table"></i></span> Tables
+        <a class="<%= isActiveClass('tables') %>" href="<%= data.config.publicPath %>/tables/">
+          <span class="icon is-small"><i class="fa fa-table"></i></span>  <span class="menu-text">Tables</span>
         </a>
       </li>
       <li>
-        <a
-          class="<%= isActiveClass('presentations') %> menu--<%= activeMenu %>"
-          href="<%= data.config.publicPath %>/presentations/"
-        >
-          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations
+        <a class="<%= isActiveClass('presentations') %>" href="<%= data.config.publicPath %>/presentations/">
+          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span>  <span class="menu-text">Presentations</span>
         </a>
       </li>
 
       <li class="has-children">
-        <a class=""><i class="fa fa-cog"></i> Settings</a>
+        <a class=""
+          ><span class="icon is-small"><i class="fa fa-cog"></i></span>  <span class="menu-text">Settings</span></a
+        >
         <ul>
           <li><a>Members</a></li>
           <li><a>Plugins</a></li>
@@ -52,20 +48,32 @@
     <p class="menu-label">Live On</p>
     <ul class="menu-list">
       <li>
-        <a href="<%= data.config.publicPath %>/">
-          <span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages
+        <a class="<%= isActiveClass('additional') %>" href="<%= data.config.publicPath %>/additional/">
+          <span class="icon is-small"><i class="fa fa-bug"></i></span> <span class="menu-text">Additional Pages</span>
         </a>
       </li>
       <li>
-        <a href="<%= data.config.publicPath %>/">
-          <span class="icon is-small"><i class="fa fa-windows"></i></span> Extras
-        </a>
-      </li>
-      <li>
-        <a href="<%= data.config.publicPath %>/">
-          <span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page
+        <a class="<%= isActiveClass('extras') %>" href="<%= data.config.publicPath %>/extras/">
+          <span class="icon is-small"><i class="fa fa-windows"></i></span> <span class="menu-text">Extras</span>
         </a>
       </li>
     </ul>
+
+    <div class="ads-square">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-gw-3+1f-3d+2z"
+        data-ad-client="ca-pub-5442972248172818"
+        data-ad-slot="9533807764"
+      ></ins>
+      <script>
+        ;(adsbygoogle = window.adsbygoogle || []).push({})
+      </script>
+    </div>
   </nav>
+
+  <div id="sidebar-toggler"><span class="icon is-small"><i class="fa fa-arrow-left"></i></span></div>
 </aside>
