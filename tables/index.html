@@ -4,19 +4,30 @@
     <meta name="robots" content="index, follow" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7" />
 
 <meta name="language" content="en-EN" />
 <meta name="author" content="Irfan Maulana" />
 <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Font Awesome -->
+<!-- See docs on: https://fontawesome.com/v4.7.0/icons/ -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Font Awesome -->
+
 <link rel="stylesheet" href="/bulma-admin-dashboard-template/css/main.css" />
 <script async src="/bulma-admin-dashboard-template/js/module-event.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-25065548-2');</script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', 'UA-25065548-2')
+</script>
 
   </head>
 
@@ -48,17 +59,17 @@
       </div>
 
       <div class="navbar-menu navbar-end" id="navMenu">
-        <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
-        <a class="navbar-item is-tab is-hidden-tablet" href="https://github.com/mazipan/bulma-admin-dashboard-template"
-          >Github</a
-        >
-        <a class="navbar-item is-tab is-hidden-tablet" href="/bulma-admin-dashboard-template/">Resume Template</a>
-        <a class="navbar-item is-tab is-hidden-tablet" href="#about">About</a>
         <a class="navbar-item nav-tag">
           <span class="icon is-small">
-            <i class="fa fa-envelope-o"></i>
+            <i class="fa fa-envelope-o animated"></i>
           </span>
-          <span class="tag is-primary tag-notif">6</span>
+          <span class="tag is-success counter">2</span>
+        </a>
+        <a class="navbar-item nav-tag">
+          <span class="icon is-small">
+            <i class="fa fa-bell-o animated"></i>
+          </span>
+          <span class="tag is-danger counter">6</span>
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="https://mazipan.space/">
@@ -100,7 +111,7 @@
     <ul class="menu-list">
       <li>
         <a class="" href="/bulma-admin-dashboard-template/">
-          <span class="icon is-small"><i class="fa fa-tachometer"></i></span>  <span class="menu-text">Dashboard</span>
+          <span class="icon is-small"><i class="fa fa-tachometer"></i></span> <span class="menu-text">Dashboard</span>
         </a>
       </li>
     </ul>
@@ -113,23 +124,24 @@
       </li>
       <li>
         <a class="" href="/bulma-admin-dashboard-template/ui-elements/">
-          <span class="icon is-small"><i class="fa fa-desktop"></i></span>  <span class="menu-text">UI Elements</span>
+          <span class="icon is-small"><i class="fa fa-desktop"></i></span> <span class="menu-text">UI Elements</span>
         </a>
       </li>
       <li>
         <a class="is-active" href="/bulma-admin-dashboard-template/tables/">
-          <span class="icon is-small"><i class="fa fa-table"></i></span>  <span class="menu-text">Tables</span>
+          <span class="icon is-small"><i class="fa fa-table"></i></span> <span class="menu-text">Tables</span>
         </a>
       </li>
       <li>
         <a class="" href="/bulma-admin-dashboard-template/presentations/">
-          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span>  <span class="menu-text">Presentations</span>
+          <span class="icon is-small"><i class="fa fa-bar-chart"></i></span>
+          <span class="menu-text">Presentations</span>
         </a>
       </li>
 
       <li class="has-children">
         <a class=""
-          ><span class="icon is-small"><i class="fa fa-cog"></i></span>  <span class="menu-text">Settings</span></a
+          ><span class="icon is-small"><i class="fa fa-cog"></i></span> <span class="menu-text">Layouts</span></a
         >
         <ul>
           <li><a>Members</a></li>
@@ -169,7 +181,9 @@
     </div>
   </nav>
 
-  <div id="sidebar-toggler"><span class="icon is-small"><i class="fa fa-arrow-left"></i></span></div>
+  <div id="sidebar-toggler">
+    <span class="icon is-small"><i class="fa fa-angle-double-left"></i></span>
+  </div>
 </aside>
 
 
@@ -181,10 +195,14 @@
   </ul>
 </nav>
 
-<div class="level mt-2 mr-2">
+<div class="level mt-2 mr-2 content-title">
   <div class="level-left">
     <div class="level-item">
-      <div class="title has-text-primary"><i class="fa fa-table"></i> Tables</div>
+      <div class="title has-text-primary">
+				<span class="icon is-small icon-title">
+					<i class="fa fa-table"></i>
+				</span>
+				<span>Tables</div></span>
     </div>
   </div>
   <div class="level-right">
@@ -374,7 +392,7 @@
                         <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
                       >
                       <a class="button is-danger">
-                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                        <span class="icon is-small"> <i class="fa fa-trash-o"></i> </span><span>Delete</span></a
                       >
                     </td>
                   </tr>
@@ -388,7 +406,7 @@
                         <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
                       >
                       <a class="button is-danger">
-                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                        <span class="icon is-small"> <i class="fa fa-trash-o"></i> </span><span>Delete</span></a
                       >
                     </td>
                   </tr>
@@ -402,7 +420,7 @@
                         <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
                       >
                       <a class="button is-danger">
-                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                        <span class="icon is-small"> <i class="fa fa-trash-o"></i> </span><span>Delete</span></a
                       >
                     </td>
                   </tr>
@@ -416,7 +434,7 @@
                         <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
                       >
                       <a class="button is-danger">
-                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                        <span class="icon is-small"> <i class="fa fa-trash-o"></i> </span><span>Delete</span></a
                       >
                     </td>
                   </tr>
@@ -430,7 +448,7 @@
                         <span class="icon is-small"> <i class="fa fa-edit"></i> </span><span>Edit</span></a
                       >
                       <a class="button is-danger">
-                        <span class="icon is-small"> <i class="fa fa-archive"></i> </span><span>Delete</span></a
+                        <span class="icon is-small"> <i class="fa fa-trash-o"></i> </span><span>Delete</span></a
                       >
                     </td>
                   </tr>
