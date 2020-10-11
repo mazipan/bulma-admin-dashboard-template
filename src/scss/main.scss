@@ -187,8 +187,8 @@ $text: #f8f8f2;
   height: calc(100vh - 3rem);
   overflow: hidden;
   transition: 0.2s width ease-out;
-  position: relative;
-
+  position: fixed;
+  z-index: 1;
 
   a {
     color: $text;
@@ -284,6 +284,7 @@ $text: #f8f8f2;
 // main area
 .main {
   padding: 2em 1em 0 1em;
+  margin-left: 18%;
 }
 
 .menu-label {
