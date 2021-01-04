@@ -44,9 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // Toggle sidebar
   var sidebarToggler = document.querySelector('#sidebar-toggler')
   var sidebar = document.querySelector('#main-sidebar')
+  var mainContent = document.querySelector('#main')
 
   sidebarToggler.addEventListener('click', function () {
     sidebar.classList.toggle('closed')
+    mainContent.classList.toggle('sidebar--closed')
     if (sidebar.classList.contains('closed')) {
       withChildren.forEach(function (wChildrenEl) {
         wChildrenEl.classList.remove('open')
