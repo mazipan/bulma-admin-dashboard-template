@@ -7882,7 +7882,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
         margin-right: 8px; }
 
 .main {
-  padding: 70px 1em 0 260px; }
+  padding: 70px 1em 0 260px;
+  min-height: calc(100vh - 64px); }
   .main.sidebar--closed {
     padding: 70px 1em 0 70px; }
 
@@ -7900,3 +7901,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .field-label {
   text-align: left; }
+
+.copyright {
+  background: #44475a;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  padding: 12px 10px;
+  z-index: 20; }
+  .copyright.sidebar--closed {
+    left: 60px; }
