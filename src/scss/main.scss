@@ -44,10 +44,29 @@ $text: #f8f8f2;
   animation-duration: calc(var(--animate-duration) * 1.3);
   animation-timing-function: ease-in-out;
 }
-
-
 // Animate CSS --end
-.nav-tag {
+
+// Nav bar menu
+.navbar-menu {
+	// background-color: $theme;
+	// on mobile only
+	@media (max-width: 1023px) {
+		padding: 2px 0 0 0;
+
+		.navbar-link{
+			display: flex;
+		}
+
+		.navbar-dropdown{
+			.navbar-item {
+				padding-left: 1.125em;
+				padding-right: 1.125em;
+			}
+		}
+	}
+}
+
+.navbar-menu .nav-tag {
   position: relative;
 
   .icon {
@@ -61,7 +80,15 @@ $text: #f8f8f2;
     border-radius: 50%;
     position: absolute;
     top: 5px;
-    right: 0px;
+
+    @media (min-width: 1024px) {
+			right: 0px;
+		}
+
+		// on mobile only
+		@media (max-width: 1023px) {
+			left: 42px;
+		}
 
     @media (max-width: 768px) {
       margin-left: -2px;
@@ -71,12 +98,12 @@ $text: #f8f8f2;
 
 .hero {
   background-color: $theme;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 64px;
-	z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 20;
 }
 
 .navbar {
@@ -187,16 +214,33 @@ $text: #f8f8f2;
 
 // navigation left area
 .aside {
-  background: $theme;
-  padding: 2em .2em 0 1em;
+	background: $theme;
+	padding: 2em .5em 0 .5em;
   height: calc(100vh - 64px);
   overflow: hidden;
   transition: 0.2s width ease-out;
   position: fixed;
-	top: 64px;
-	left: 0;
-	z-index: 2;
+  top: 64px;
+  left: 0;
+  z-index: 2;
 	width: 250px;
+
+  #sidebar-toggler {
+    width: 100%;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #bd93f9;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      transition: 0.3s linear transform;
+    }
+
+	}
 
   a {
     color: $text;
@@ -246,23 +290,6 @@ $text: #f8f8f2;
     }
   }
 
-  #sidebar-toggler {
-    width: 100%;
-    cursor: pointer;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    background-color: #bd93f9;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: flex-end;
-
-    .icon {
-      transition: 0.3s linear transform;
-    }
-
-  }
-
   &.closed {
     width: 60px;
 
@@ -286,16 +313,52 @@ $text: #f8f8f2;
       }
     }
 
-  }
+	}
+
+	// on mobile only
+	@media (max-width: 768px) {
+		width: 60px;
+		overflow: auto;
+
+		#sidebar-toggler {
+			display: none;
+		}
+
+		&:not(:hover){
+			.menu-label,
+			.menu-text {
+				display: none;
+			}
+			.menu-list {
+				.has-children {
+					max-height: 36px;
+
+					>a::before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+
+		&:hover{
+			width: 250px;
+		}
+	}
 }
 
 // main area
 .main {
-	padding: 70px 1em 0 260px;
-  min-height: calc(100vh - 64px);
+  padding: 70px 1em 2em 260px;
+	min-height: calc(100vh - 64px);
+  transition: 0.2s all ease-out;
 
   &.sidebar--closed {
-		padding: 70px 1em 0 70px;
+    padding: 70px 1em 2em 70px;
+	}
+
+	// on mobile only
+	@media (max-width: 768px) {
+		padding: 70px 1em 2em 70px;
 	}
 }
 
@@ -309,9 +372,22 @@ $text: #f8f8f2;
   margin-top: .5em;
 }
 
-.ads-square {
-  min-width: 250px;
-  min-height: 100px;
+.menu{
+	position: relative;
+
+	// on mobile only
+	@media (max-width: 768px) {
+		padding-bottom: 70px;
+	}
+
+	.ads-square {
+		width: 100%;
+		min-width: 250px;
+		min-height: 159px;
+		margin-top: 2em;
+		position: absolute;
+		left: 0;
+	}
 }
 
 // Form
@@ -319,16 +395,23 @@ $text: #f8f8f2;
   text-align: left;
 }
 
-.copyright{
-	background: $theme;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
+.copyright {
+  background: $theme;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 	left: 250px;
-	padding: 12px 10px;
+	padding: 15.5px 10px;
 	z-index: 20;
+	font-size: .7rem;
+  transition: 0.2s all ease-out;
+
+	// on mobile only
+	@media (max-width: 768px) {
+    left: 0;
+	}
 
   &.sidebar--closed {
-		left: 60px;
-	}
+    left: 60px;
+  }
 }
