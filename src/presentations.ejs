@@ -9,58 +9,56 @@
     <% include /header %>
 
     <div class="wrapper">
-      <div class="columns">
-        <%- include('/sidebar', {activeMenu: 'presentations'}) %>
+			<%- include('/sidebar', {activeMenu: 'presentations'}) %>
 
-        <main class="column main">
-          <%- include('/breadcrumb', {menuTitle: 'Presentations', menuIcon: 'fa-bar-chart'}) %>
+			<main class="main" id="main">
+				<%- include('/breadcrumb', {menuTitle: 'Presentations', menuIcon: 'fa-bar-chart'}) %>
 
-          <div class="columns is-multiline">
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartLine" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartScatter" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartDoughnut" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-6">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Chart</p>
-                </div>
-                <div class="message-body">
-                  <div id="chartBar" style="width: 100%"></div>
-                </div>
-              </article>
-            </div>
-          </div>
+				<div class="columns is-multiline">
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartLine" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartScatter" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartDoughnut" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartBar" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+				</div>
 
-          <% include /horizontalAds %>
-        </main>
-      </div>
+				<% include /horizontalAds %>
+			</main>
     </div>
 
     <% include /jsonLd %>

@@ -71,6 +71,12 @@ $text: #f8f8f2;
 
 .hero {
   background-color: $theme;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	z-index: 20;
 }
 
 .navbar {
@@ -183,11 +189,14 @@ $text: #f8f8f2;
 .aside {
   background: $theme;
   padding: 2em .2em 0 1em;
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 64px);
   overflow: hidden;
   transition: 0.2s width ease-out;
   position: fixed;
-  z-index: 1;
+	top: 64px;
+	left: 0;
+	z-index: 2;
+	width: 250px;
 
   a {
     color: $text;
@@ -241,9 +250,9 @@ $text: #f8f8f2;
     width: 100%;
     cursor: pointer;
     bottom: 0;
+    left: 0;
     position: absolute;
     background-color: #bd93f9;
-    margin: 0 -1rem 0 -0.25rem;
     padding: 1rem 2rem;
     display: flex;
     justify-content: flex-end;
@@ -254,7 +263,7 @@ $text: #f8f8f2;
 
   }
 
-  &.column.is-2.closed {
+  &.closed {
     width: 60px;
 
     .menu-label,
@@ -282,8 +291,11 @@ $text: #f8f8f2;
 
 // main area
 .main {
-  padding: 2em 1em 0 1em;
-  margin-left: 18%;
+	padding: 70px 1em 0 260px;
+
+  &.sidebar--closed {
+		padding: 70px 1em 0 70px;
+	}
 }
 
 .menu-label {
