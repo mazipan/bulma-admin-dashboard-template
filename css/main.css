@@ -7729,20 +7729,34 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   animation-duration: calc(var(--animate-duration) * 1.3);
   animation-timing-function: ease-in-out; }
 
-.nav-tag {
+@media (max-width: 1023px) {
+  .navbar-menu {
+    padding: 2px 0 0 0; }
+    .navbar-menu .navbar-link {
+      display: flex; }
+    .navbar-menu .navbar-dropdown .navbar-item {
+      padding-left: 1.125em;
+      padding-right: 1.125em; } }
+
+.navbar-menu .nav-tag {
   position: relative; }
-  .nav-tag .icon {
+  .navbar-menu .nav-tag .icon {
     height: 2.5rem;
     width: 2.5rem;
     background-color: #282a36;
     border-radius: 50%; }
-  .nav-tag .counter {
+  .navbar-menu .nav-tag .counter {
     border-radius: 50%;
     position: absolute;
-    top: 5px;
-    right: 0px; }
+    top: 5px; }
+    @media (min-width: 1024px) {
+      .navbar-menu .nav-tag .counter {
+        right: 0px; } }
+    @media (max-width: 1023px) {
+      .navbar-menu .nav-tag .counter {
+        left: 42px; } }
     @media (max-width: 768px) {
-      .nav-tag .counter {
+      .navbar-menu .nav-tag .counter {
         margin-left: -2px; } }
 
 .hero {
@@ -7818,7 +7832,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .aside {
   background: #44475a;
-  padding: 2em .2em 0 1em;
+  padding: 2em .5em 0 .5em;
   height: calc(100vh - 64px);
   overflow: hidden;
   transition: 0.2s width ease-out;
@@ -7827,6 +7841,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   left: 0;
   z-index: 2;
   width: 250px; }
+  .aside #sidebar-toggler {
+    width: 100%;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #bd93f9;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end; }
+    .aside #sidebar-toggler .icon {
+      transition: 0.3s linear transform; }
   .aside a {
     color: #f8f8f2; }
   .aside .menu-list li {
@@ -7856,18 +7882,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .aside .menu-list i {
     margin-right: 10px;
     margin-left: 5px; }
-  .aside #sidebar-toggler {
-    width: 100%;
-    cursor: pointer;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    background-color: #bd93f9;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: flex-end; }
-    .aside #sidebar-toggler .icon {
-      transition: 0.3s linear transform; }
   .aside.closed {
     width: 60px; }
     .aside.closed .menu-label,
@@ -7880,12 +7894,31 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       .aside.closed #sidebar-toggler .icon {
         transform: rotate(180deg);
         margin-right: 8px; }
+  @media (max-width: 768px) {
+    .aside {
+      width: 60px;
+      overflow: auto; }
+      .aside #sidebar-toggler {
+        display: none; }
+      .aside:not(:hover) .menu-label,
+      .aside:not(:hover) .menu-text {
+        display: none; }
+      .aside:not(:hover) .menu-list .has-children {
+        max-height: 36px; }
+        .aside:not(:hover) .menu-list .has-children > a::before {
+          opacity: 0; }
+      .aside:hover {
+        width: 250px; } }
 
 .main {
-  padding: 70px 1em 0 260px;
-  min-height: calc(100vh - 64px); }
+  padding: 70px 1em 2em 260px;
+  min-height: calc(100vh - 64px);
+  transition: 0.2s all ease-out; }
   .main.sidebar--closed {
-    padding: 70px 1em 0 70px; }
+    padding: 70px 1em 2em 70px; }
+  @media (max-width: 768px) {
+    .main {
+      padding: 70px 1em 2em 70px; } }
 
 .menu-label {
   color: #bd93f9;
@@ -7895,9 +7928,26 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .block {
   margin-top: .5em; }
 
-.ads-square {
-  min-width: 250px;
-  min-height: 100px; }
+.menu {
+  position: relative; }
+  @media (max-width: 768px) {
+    .menu {
+      padding-bottom: 70px; } }
+  .menu .ads-square {
+    width: 100%;
+    min-width: 250px;
+    min-height: 159px;
+    margin-top: 2em;
+    position: absolute;
+    left: 0; }
+
+.ads-horizontal {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .field-label {
   text-align: left; }
@@ -7908,7 +7958,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   position: fixed;
   bottom: 0;
   left: 250px;
-  padding: 12px 10px;
-  z-index: 20; }
+  padding: 15.5px 10px;
+  z-index: 20;
+  font-size: .7rem;
+  transition: 0.2s all ease-out; }
+  @media (max-width: 768px) {
+    .copyright {
+      left: 0; } }
   .copyright.sidebar--closed {
     left: 60px; }

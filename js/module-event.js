@@ -49,14 +49,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   sidebarToggler.addEventListener('click', function () {
     sidebar.classList.toggle('closed')
-    mainContent.classList.toggle('sidebar--closed')
-		footerCopyright.classList.toggle('sidebar--closed')
 
     if (sidebar.classList.contains('closed')) {
       withChildren.forEach(function (wChildrenEl) {
         wChildrenEl.classList.remove('open')
-      })
-    }
+			})
+
+			mainContent.classList.add('sidebar--closed')
+			footerCopyright.classList.add('sidebar--closed')
+    } else {
+			mainContent.classList.remove('sidebar--closed')
+			footerCopyright.classList.remove('sidebar--closed')
+		}
   })
 
   // Notification Animate
