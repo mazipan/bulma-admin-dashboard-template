@@ -292,6 +292,7 @@ $text: #f8f8f2;
 // main area
 .main {
 	padding: 70px 1em 0 260px;
+  min-height: calc(100vh - 64px);
 
   &.sidebar--closed {
 		padding: 70px 1em 0 70px;
@@ -316,4 +317,18 @@ $text: #f8f8f2;
 // Form
 .field-label {
   text-align: left;
+}
+
+.copyright{
+	background: $theme;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 250px;
+	padding: 12px 10px;
+	z-index: 20;
+
+  &.sidebar--closed {
+		left: 60px;
+	}
 }
