@@ -1,6 +1,8 @@
 dependencies:
+  animate.css: 4.1.1
   bulma: 0.9.1
   bulma-dracula: 1.1.1
+  pnpm: 5.8.0
 devDependencies:
   '@11ty/eleventy': 0.11.0
   cross-env: 7.0.2
@@ -162,6 +164,10 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  /animate.css/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
   /ansi-regex/2.1.1:
     dev: true
     engines:
@@ -3276,6 +3282,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
+  /pnpm/5.8.0:
+    dev: false
+    engines:
+      node: '>=10.14'
+    hasBin: true
+    resolution:
+      integrity: sha512-J2rAxEXnohwcDkR4KNI6UsYhDs9hJ/tje/BahHpXawi406pmxd6caJUXfRxZPbKvKdyVqfBRKhlX1vyhYbM8lQ==
   /portscanner/2.1.1:
     dependencies:
       async: 1.5.2
@@ -4760,10 +4773,12 @@ packages:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 specifiers:
   '@11ty/eleventy': ^0.11.0
+  animate.css: ^4.1.1
   bulma: ^0.9.1
   bulma-dracula: ^1.1.1
   cross-env: 7.0.2
   node-sass: ^4.14.1
   node-sass-magic-importer: ^5.3.2
   npm-run-all: ^4.1.5
+  pnpm: ^5.8.0
   rimraf: 3.0.2

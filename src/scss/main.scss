@@ -3,16 +3,70 @@
 $theme: #44475a;
 $selected: #6272a4;
 $text: #f8f8f2;
-$cyan: #8be9fd;
 
-.tag-notif {
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  margin-left: 10px;
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
 
-  @media (max-width: 768px) {
-    margin-left: -2px;
+// Animate CSS --start
+.animated {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.3);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.3);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  animation-name: heartBeat;
+  animation-duration: calc(var(--animate-duration) * 1.3);
+  animation-timing-function: ease-in-out;
+}
+
+
+// Animate CSS --end
+
+.nav-tag {
+  position: relative;
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: $background;
+    border-radius: 50%;
+  }
+
+  .counter {
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+
+    @media (max-width: 768px) {
+      margin-left: -2px;
+    }
   }
 }
 
@@ -22,10 +76,6 @@ $cyan: #8be9fd;
 
 .navbar {
   background: $theme;
-
-  .nav-tag {
-    padding-right: 30px;
-  }
 
   &-item {
     background-color: $theme;
@@ -78,7 +128,9 @@ $cyan: #8be9fd;
     border: 0;
 
     span {
-      background-color: $cyan;
+      height: 2px;
+      width: 22px;
+      background-color: $primary;
     }
   }
 
@@ -104,8 +156,19 @@ $cyan: #8be9fd;
   }
 }
 
-.breadcrumb:not(:last-child) {
-  margin-bottom: 0;
+.breadcrumb {
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.icon-title {
+  margin-right: .5em;
+  height: 3rem !important;
+  width: 3rem !important;
+  background-color: $primary;
+  color: $background;
+  border-radius: .25rem;
 }
 
 @media screen and (min-width: 1088px) {
@@ -123,9 +186,9 @@ $cyan: #8be9fd;
   padding: 2em .2em 0 1em;
   height: calc(100vh - 3rem);
   overflow: hidden;
-  transition: 0.2s width ease-out; 
-  position: relative;
-
+  transition: 0.2s width ease-out;
+  position: fixed;
+  z-index: 1;
 
   a {
     color: $text;
@@ -148,7 +211,7 @@ $cyan: #8be9fd;
       }
 
       >a::before {
-        content: "\f0d7";
+        content: "\f107";
         font-family: "FontAwesome";
         transition: .2s ease-out transform;
         position: absolute;
@@ -168,33 +231,35 @@ $cyan: #8be9fd;
       }
     }
 
-    .icon, i {
+    .icon,
+    i {
       margin-right: 10px;
       margin-left: 5px;
     }
   }
 
   #sidebar-toggler {
-    width: 95%;
+    width: 100%;
     cursor: pointer;
     bottom: 0;
     position: absolute;
     background-color: #bd93f9;
     margin: 0 -1rem 0 -0.25rem;
-    padding: .8rem 01rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: flex-end;
 
     .icon {
       transition: 0.3s linear transform;
     }
-    
+
   }
 
   &.column.is-2.closed {
     width: 60px;
 
-    .menu-label, .menu-text {
+    .menu-label,
+    .menu-text {
       display: none;
     }
 
@@ -206,6 +271,7 @@ $cyan: #8be9fd;
 
     #sidebar-toggler {
       justify-content: center;
+
       .icon {
         transform: rotate(180deg);
         margin-right: 8px;
@@ -218,11 +284,13 @@ $cyan: #8be9fd;
 // main area
 .main {
   padding: 2em 1em 0 1em;
+  margin-left: 18%;
 }
 
 .menu-label {
-  color: $cyan;
+  color: $primary;
   margin-left: .5em;
+  font-weight: bold;
 }
 
 .block {
@@ -232,4 +300,9 @@ $cyan: #8be9fd;
 .ads-square {
   min-width: 250px;
   min-height: 100px;
+}
+
+// Form
+.field-label {
+  text-align: left;
 }
