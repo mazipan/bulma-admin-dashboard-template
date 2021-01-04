@@ -380,6 +380,7 @@ $text: #f8f8f2;
 		padding-bottom: 70px;
 	}
 
+	// ads on sidebar
 	.ads-square {
 		width: 100%;
 		min-width: 250px;
@@ -388,6 +389,16 @@ $text: #f8f8f2;
 		position: absolute;
 		left: 0;
 	}
+}
+
+// ads on the footer
+.ads-horizontal {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 // Form
